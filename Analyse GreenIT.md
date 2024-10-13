@@ -28,7 +28,7 @@
 
 |        **Scénario**        |     _(Division des étapes)_     | **EcoIndex** | **Eau (cl)** | **GES(gCO2e)** | **Taille du DOM** | **Requêtes** | **Taille de la page (Ko)** |
 |:--------------------------:|:-------------------------------:|:------------:|:------------:|:--------------:|:-----------------:|:------------:|:--------------------------:|
-| **Chargement de la page**  |                                 |   🟢 A 87.31   |     1.88     |      1.25      |        231        |       4      |              2             |
+| **Chargement de la page**  |                                 |  🟠 F 19.27   |     3.92     |      2.51      |        1119       |       226    |              2675          |
 | **Créer un événement**     | _1.Nouveau Rendez vous_         |   🟢 B 78.87   |     2.13     |      1.42      |        231        |      17      |            1272            |
 |                            | _2.Enregistrer et fermer_       |   🟢 B 78.33   |     2.15     |      1.43      |        231        |      20      |            1282            |
 | **Modifier un événement**  | _1.Modifier(double click)_      |   🟢 B 78.86   |     2.13     |      1.42      |        231        |      17      |            1274            |
