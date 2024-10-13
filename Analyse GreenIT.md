@@ -31,7 +31,7 @@
 | **Chargement de la page**  |                                 |  🟠 F 19.27   |     3.92     |      2.51      |        1119       |       226    |              2675          |
 | **Créer un événement**     | _1.Nouveau Rendez vous_         |   🔴 G 7.41    |     4.28     |      2.85      |        1820       |      316     |            8503            |
 |                            | _2.Enregistrer et fermer_       |   🟠 F 12.95   |     4.11     |      2.74      |        1206       |      340     |            8578            |
-| **Modifier un événement**  | _1.Modifier(3 click)_           |   🟢 D 43.75   |     3.19     |      2.13      |        1906       |      43      |            276             |
-|                            | _2.Enregistrer la modification_ |   🟢 D 46.42   |     3.11     |      2.07      |        1202       |      57      |            260             |
+| **Modifier un événement**  | _1.Modifier(3 click)_           |   🟡 D 43.75   |     3.19     |      2.13      |        1906       |      43      |            276             |
+|                            | _2.Enregistrer la modification_ |   🟡 D 46.42   |     3.11     |      2.07      |        1202       |      57      |            260             |
 | **Supprimer un événement** |                                 |   🟢 C 57.63   |     2.77     |      1.85      |        1203       |      5       |             4              |
-| **Changer de vue**         |                                 |   🟢 D 54.47   |     2.87     |      1.91      |        1179       |       23     |             165             |
+| **Changer de vue**         |                                 |   🟡 D 54.47   |     2.87     |      1.91      |        1179       |       23     |             165             |
