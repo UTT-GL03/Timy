@@ -26,3 +26,15 @@ Cette transition vers le numérique a également permis d'éliminer l'utilisatio
 Cependant, cette numérisation a aussi un impact écologique : elle augmente la demande en énergie, notamment avec l'usage des serveurs de données pour le stockage et la synchronisation. De plus il faut aussi énormément de ressources pour fabriquer les smartphones, ordinateurs ou encore serveurs.
 
 Par ailleurs, la dépendance accrue aux appareils numériques peut également poser des questions en termes d'accessibilité pour certaines populations moins connectées. Ou encore le fait d'être constamment innondé de notifcation. 
+
+#Scénarios d'usage et impacts
+
+#Scénario :
+
+#Scénario :
+
+#Impact de l'exécution des scénarios auprès de différents services concurrents
+
+#Maquette de l'interface et échantillon de données
+![Template agenda drawio](https://github.com/user-attachments/assets/6088ae04-3205-476b-9b87-b93d63615b54)
+
