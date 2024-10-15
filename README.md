@@ -27,14 +27,14 @@ Cependant, cette numérisation a aussi un impact écologique : elle augmente la 
 
 Par ailleurs, la dépendance accrue aux appareils numériques peut également poser des questions en termes d'accessibilité pour certaines populations moins connectées. Ou encore le fait d'être constamment innondé de notifcation. 
 
-#Scénarios d'usage et impacts
+# Scénarios d'usage et impacts
 
-#Scénario :
+# Scénario :
 
-#Scénario :
+# Scénario :
 
-#Impact de l'exécution des scénarios auprès de différents services concurrents
+# Impact de l'exécution des scénarios auprès de différents services concurrents
 
-#Maquette de l'interface et échantillon de données
+# Maquette de l'interface et échantillon de données
 ![Template agenda drawio](https://github.com/user-attachments/assets/6088ae04-3205-476b-9b87-b93d63615b54)
 
