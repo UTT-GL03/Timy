@@ -29,9 +29,30 @@ Par ailleurs, la dépendance accrue aux appareils numériques peut également po
 
 # Scénarios d'usage et impacts
 
-# Scénario :
+Nous faisons l'hypothèse que l’agenda en ligne est utilisé de manière régulière au quotidien pour organiser des événements personnels ou professionnels. Les fonctionnalités principales incluent la création, la modification, et la suppression d’événements, ainsi que la consultation de l'agenda sous différents formats (journée, semaine, mois). Dans ce cadre, nous avons identifié plusieurs scénarios d'usage qui permettent d’évaluer l'impact écologique lié à l’utilisation du service.
 
-# Scénario :
+# Scénario : "Créer un événement"
+
+1. L'utilisateur ouvre l'application d'agenda à partir d'un favori (sans passer par un moteur de recherche) sur son smartphone ou ordinateur.
+2. Il crée un nouvel événement en renseignant un titre, une date et une heure.
+3. L'événement est ajouté au calendrier avec une synchronisation automatique sur tous ses appareils.
+
+# Scénario : "Modifier un événement"
+
+1. L'utilisateur consulte son agenda pour vérifier les rendez-vous à venir.
+2. Il modifie un événement existant en changeant sa description, sa date ou son heure.
+3. La modification est immédiatement synchronisée avec les appareils connectés.
+
+# Scénario : "Supprimer un événement"
+
+1. L'utilisateur décide d'annuler un rendez-vous ou un événement.
+2. Il sélectionne l'événement dans son agenda et choisit l’option pour le supprimer.
+3. L'événement est supprimé sur tous ses appareils synchronisés.
+
+# Scénario : "Changer de vue"
+
+1. L'utilisateur souhaite consulter son emploi du temps pour la semaine ou pour le mois.
+2. Il change la vue de son agenda, passant par exemple d'une vue hebdomadaire à une vue mensuelle.
 
 # Impact de l'exécution des scénarios auprès de différents services concurrents
 
