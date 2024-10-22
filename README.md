@@ -36,5 +36,5 @@ Par ailleurs, la dépendance accrue aux appareils numériques peut également po
 # Impact de l'exécution des scénarios auprès de différents services concurrents
 
 # Maquette de l'interface et échantillon de données
-![Template agenda drawio](https://github.com/user-attachments/assets/6088ae04-3205-476b-9b87-b93d63615b54)
+![Template agenda](https://github.com/user-attachments/assets/5ffb1bb8-aa06-4069-9005-6af886492467)
 
