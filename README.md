@@ -56,6 +56,20 @@ Nous faisons l'hypothèse que l’agenda en ligne est utilisé de manière régu
 
 # Impact de l'exécution des scénarios auprès de différents services concurrents
 
+L'EcoIndex d'une page (de A à G) est calculé (sources : EcoIndex, Octo, GreenIT) en fonction du positionnement de cette page parmi les pages mondiales concernant :
+
+- le nombre de requêtes lancées,
+- le poids des téléchargements,
+- le nombre d'éléments du document.
+  
+Nous avons choisi de comparer l'impact des scénarios sur différents agenda en ligne, connus de tous ou peu utilisés :
+
+- Google Agenda,
+- Outlook,
+- Zimbra,
+
+Les résultats sont les suivants : 
+
 # Maquette de l'interface et échantillon de données
 ![Template agenda](https://github.com/user-attachments/assets/5ffb1bb8-aa06-4069-9005-6af886492467)
 
