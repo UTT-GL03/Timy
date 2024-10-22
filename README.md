@@ -66,9 +66,9 @@ Nous avons choisi de comparer l'impact des scénarios sur différents agenda en 
 
 - Google Agenda,
 - Outlook,
-- Zimbra,
+- Zimbra Messagerie,
 
-Les résultats sont les suivants : 
+Les résultats sont les suivants : https://github.com/UTT-GL03/Timy/blob/c439041eccb6c04562678f8e45810a7b60e8d9a0/Analyse%20GreenIT.md
 
 # Maquette de l'interface et échantillon de données
 ![Template agenda](https://github.com/user-attachments/assets/5ffb1bb8-aa06-4069-9005-6af886492467)
