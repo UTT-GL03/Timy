@@ -5,7 +5,7 @@ Une application permettant de gérer son calendrier au format numérique
 
 Nous avons choisi de travailler sur une application de type Google Calendar ou agenda, car nous l'utilisons régulièrement dans notre vie quotidienne, notamment pour organiser nos emplois du temps d'étudiants. Ce type d'application est très pratique, car il permet de planifier plus facilement les tâches, les rendez-vous et les échéances. Cela améliore la productivité et la gestion du temps.
 
-Nous ne sommes pas les seuls à utiliser ce genre d'application. Par exemple, l'application GOOGLE CALENDAR compte plus de 500 millions d'utilisateurs dans le monde (Source : Zipdo).
+Nous ne sommes pas les seuls à utiliser ce genre d'application. Par exemple, l'application GOOGLE CALENDAR compte plus de 500 millions d'utilisateurs dans le monde (Source : explodingtopics : https://explodingtopics.com/blog/google-workspace-stats).
 
 # Utilité sociale
 
