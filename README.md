@@ -3,29 +3,29 @@ Une application permettant de gérer son calendrier au format numérique
 
 # Choix du sujet
 
-Nous avons choisi de travailler sur une application type Google Calendar ou agenda car nous l'utilisons régulièrement dans nos vie quotidienne. Notamment pour organiser nos emploi du temps d'étudiant. Ce type d'application est très pratique car cela permet de planifier plus facilement les tâches, les rendez-vous et les échéance. Cela permert d'améliorer la productivité et la gestion du temps.
+Nous avons choisi de travailler sur une application de type Google Calendar ou agenda, car nous l'utilisons régulièrement dans notre vie quotidienne, notamment pour organiser nos emplois du temps d'étudiants. Ce type d'application est très pratique, car il permet de planifier plus facilement les tâches, les rendez-vous et les échéances. Cela améliore la productivité et la gestion du temps.
 
-Nous ne sommes pas les seuls à utiliser ce genre d'application. Par exemple l'application GOOGLE CALENDAR compte plus de 500 millions d'utilisateurs dans le monde (Source : Zipdo)
+Nous ne sommes pas les seuls à utiliser ce genre d'application. Par exemple, l'application GOOGLE CALENDAR compte plus de 500 millions d'utilisateurs dans le monde (Source : Zipdo).
 
 # Utilité sociale
 
-L'utilité sociale d'une application du type agenda numérique est principalement d'améliorer l'organisation des activités, aussi bien au niveau personnel que professionnel. Elle permet de mieux gérer le temps, d'éviter les oublis, et de structurer les journées de manière efficace, ce qui permet d'avoir une meilleure qualité de vie. 
+L'utilité sociale d'une application de type agenda numérique est principalement d'améliorer l'organisation des activités, aussi bien au niveau personnel que professionnel. Elle permet de mieux gérer le temps, d'éviter les oublis, et de structurer les journées de manière efficace, ce qui contribue à une meilleure qualité de vie.
 
-Ce type d'application permet aussi d'améliorer la communication entre collègues ou membre de la famille en facilitant la planification de réunions, d'événements ou encore de projet collaboratifs. Cela a pour avantage de réduire les risques de malentendus comme l'horaire d'un rendez vous par exemple.
+Ce type d'application améliore aussi la communication entre collègues ou membres de la famille en facilitant la planification de réunions, d'événements ou de projets collaboratifs. Cela réduit les risques de malentendus, comme l'horaire d'un rendez-vous par exemple.
 
-De plus dans des contextes de travail à distance ou d'emploi du temps chargé, ces applications jouent un rôle clé dans la fluidité des échanges et la coordination des équipes, permettant ainsi d'augmenter la productivité globale tout en ayant un équilibre entre vie personnelle et professionnelle.
+De plus, dans des contextes de travail à distance ou d'emploi du temps chargé, ces applications jouent un rôle clé dans la fluidité des échanges et la coordination des équipes, augmentant ainsi la productivité globale tout en facilitant l'équilibre entre vie personnelle et professionnelle.
 
 # Effets de la numérisation
 
-La numérisation des agendas a transformé profondément la manière dont nous gérons notre temps et nos activités. 
+La numérisation des agendas a profondément transformé la manière dont nous gérons notre temps et nos activités.
 
-Les applications d'agenda numériques offrent une flexibilité et une accessibilité bien plus grandes. Elles permettent de modifier, partager et synchroniser des événements en temps réel, ce qui simplifie la coordination entre plusieurs utilisateurs.  Aussi bien dans un cardre professionnel ou personnel. 
+Les applications d'agenda numériques offrent une flexibilité et une accessibilité bien plus grandes. Elles permettent de modifier, partager et synchroniser des événements en temps réel, ce qui simplifie la coordination entre plusieurs utilisateurs, aussi bien dans un cadre professionnel que personnel.
 
-Cette transition vers le numérique a également permis d'éliminer l'utilisation du papier, contribuant ainsi à une réduction de la consommation de ressources physiques. En effet chaque année près de 10 millions d'agendas papiers sont vendus.  
+Cette transition vers le numérique a également permis de réduire l'utilisation du papier, contribuant ainsi à une diminution de la consommation de ressources physiques. En effet, chaque année, près de 10 millions d'agendas papier sont vendus.
 
-Cependant, cette numérisation a aussi un impact écologique : elle augmente la demande en énergie, notamment avec l'usage des serveurs de données pour le stockage et la synchronisation. De plus il faut aussi énormément de ressources pour fabriquer les smartphones, ordinateurs ou encore serveurs.
+Cependant, cette numérisation a aussi un impact écologique : elle augmente la demande en énergie, notamment avec l'usage des serveurs de données pour le stockage et la synchronisation. De plus, il faut énormément de ressources pour fabriquer les smartphones, ordinateurs, ou encore serveurs.
 
-Par ailleurs, la dépendance accrue aux appareils numériques peut également poser des questions en termes d'accessibilité pour certaines populations moins connectées. Ou encore le fait d'être constamment innondé de notifcation. 
+Par ailleurs, la dépendance accrue aux appareils numériques peut également poser des questions en termes d'accessibilité pour certaines populations moins connectées, ainsi que des problèmes liés aux notifications constantes.
 
 # Scénarios d'usage et impacts
 
