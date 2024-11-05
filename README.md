@@ -93,7 +93,8 @@ L'interface est composée de deux types de "pages" distinctes :
 
 Pour cette première version du prototype :
 
-L’échantillon de données est chargé de manière statique dans le code, permettant une visualisation immédiate des événements de la semaine.
-Les fonctionnalités implémentées se concentrent sur le scénario prioritaire, qui permet de charger la page d’une semaine et de naviguer entre les différentes semaines.
-Ce scénario nécessite une interface intuitive qui facilite la transition d’une semaine à l’autre tout en affichant clairement les événements programmés.
+- L’échantillon de données est chargé de manière statique dans le code, permettant une visualisation immédiate des événements de la semaine.
+- Les fonctionnalités implémentées se concentrent sur le scénario prioritaire, qui permet de charger la page d’une semaine et de naviguer entre les différentes semaines.
+- Ce scénario nécessite une interface intuitive qui facilite la transition d’une semaine à l’autre tout en affichant clairement les événements programmés.
+- 
 Ce prototype vise à établir une base fonctionnelle pour une gestion efficace du calendrier, tout en ouvrant la voie à des améliorations futures et à des fonctionnalités plus avancées.
