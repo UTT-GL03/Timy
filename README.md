@@ -103,3 +103,8 @@ Ce prototype vise à établir une base fonctionnelle pour une gestion efficace d
 Pour réaliser notre agenda, nous avons utilisé la bibliothèque JavaScript Scheduele-X qui permet de gérer des événements sous forme de calendrier. De plus cette bibliothèque dispose de nombreuse fonctionnalité de personnalisation.
 
 Cette bibliothèque nous permet de réaliser un calendrier sans utiliser de fichier CSS (ce qui permet potentiellement de réduire le nombre de requête et donc de charger plus rapidement les pages).
+
+|        **Scénario**        |     _(Division des étapes)_     | **EcoIndex** | **Eau (cl)** | **GES(gCO2e)** | **Taille du DOM** | **Requêtes** | **Taille de la page (Ko)** |
+|:--------------------------:|:-------------------------------:|:------------:|:------------:|:--------------:|:-----------------:|:------------:|:--------------------------:|
+| **Chargement de la page (sans events)**  |   Mode "Développement"          |   🟢 B 78.68   |     2.11     |      1.41      |        128        |       22      |              1669             |
+|                            |   Mode "Pré-Production"         |   🟢 A 90.20   |     1.79     |      1.20      |        124        |      4      |            102            |
