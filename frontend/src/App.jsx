@@ -1,30 +1,57 @@
 import reactLogo from './assets/react.svg'
 import './App.css'
-import data from './assets/sample_data.json'
-
-import { ScheduleXCalendar, useCalendarApp } from "@schedule-x/react"
-import { createViewWeek } from '@schedule-x/calendar'
+import { createEventsServicePlugin } from '@schedule-x/events-service'
+import { ScheduleXCalendar } from "@schedule-x/react"
+import { createViewWeek, createCalendar } from '@schedule-x/calendar'
 import '@schedule-x/theme-default/dist/calendar.css'
 
+import { useState, useEffect } from 'react'
+
+const eventsServicePlugin = createEventsServicePlugin();
+
 function App() {
-  // Transforme les données du fichier JSON pour les adapter au format du calendrier
-  const calendarEvents = data.evenements.map((event, index) => {
-    const startDateTime = `${event.date} ${event.beginning}`; // combine date et beginning pour la date de début
-    const endDateTime = calculateEndDateTime(event.date, event.beginning, event.duration); // Calcule la date de fin
+  const calendar = createCalendar(
+    { 
+      views: [createViewWeek()],
+      //selectedDate: '2024-10-30' 
+    },
+    [eventsServicePlugin]
+  )
+  // const [calendarEvents, setCalendarEvents] = useState([]);
+  //console.log("Événements du calendrier :", calendarEvents);
+  useEffect(() => {
+    fetch('/sample_data.json')
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Erreur lors du chargement des données");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        
+        // Transformer les données pour les adapter au format du calendrier
+        const events = data.evenements.map((event, index) => {
+          const startDateTime = `${event.date} ${event.beginning}`;
+          const endDateTime = calculateEndDateTime(event.date, event.beginning, event.duration);
 
-    return {
-      id: String(index + 1), // Id unique pour chaque événement
-      title: event.title,
-      start: startDateTime,
-      end: endDateTime,
-    }
-  });
+          return {
+            id: String(index + 1),
+            title: event.title,
+            start: startDateTime,
+            end: endDateTime,
 
-  const calendar = useCalendarApp({
-    views: [createViewWeek()],
-    events: calendarEvents,
-    selectedDate: '2024-10-30'
-  });
+          }
+        });
+        console.log(calendar);
+        calendar.eventsService.set(events);
+      })
+      .catch((error) => {
+        console.error("Erreur lors du chargement des données :", error);
+      });
+  }, []); // Le tableau vide [] signifie que useEffect s'exécute une seule fois au montage
+
+  // Créer l'application de calendrier une fois que les événements sont prêts
+ 
 
   return (
     <>
