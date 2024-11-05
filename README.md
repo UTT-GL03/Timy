@@ -17,6 +17,11 @@ De plus, dans des contextes de travail à distance ou d'emploi du temps chargé,
 
 # Effets de la numérisation
 
+L’empreinte carbone d’un agenda papier de 150 à 250 pages est similaire à celle d’un livre de format équivalent. En moyenne, la production d’un livre papier de 200 pages génère entre 1,3 et 7,5 kg d’équivalent CO₂, avec des variations dues aux pratiques de production, à l’utilisation de papier recyclé ou non, et au transport des matériaux【10†source】【11†source】.
+
+L’impact écologique d’un agenda papier est amorti par son usage quotidien et prolongé sur une année, ce qui optimise l’empreinte liée à sa production. Cette utilisation fréquente en fait un outil relativement durable, bien que des alternatives numériques puissent encore davantage réduire l'empreinte carbone associée au papier.
+
+
 La numérisation des agendas a profondément transformé la manière dont nous gérons notre temps et nos activités.
 
 Les applications d'agenda numériques offrent une flexibilité et une accessibilité bien plus grandes. Elles permettent de modifier, partager et synchroniser des événements en temps réel, ce qui simplifie la coordination entre plusieurs utilisateurs, aussi bien dans un cadre professionnel que personnel.
