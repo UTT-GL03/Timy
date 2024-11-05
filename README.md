@@ -123,3 +123,7 @@ Tab 1 : Evaluation de l'impact du prototype sans événements
 | **Chargement de la page (avec events)**  |   Mode "Pré-Production"         |   🟢 A 89.90   |     1.80     |      1.20      |        134        |      4      |            103            |
 
 Tab 2 : Evaluation de l'impact du prototype avecf événements
+
+# Prototype n°2 : Fonctionnalités pour le scénario prioritaire avec données statiques chargées de manière dynamique
+
+Pour cette deuxième version du prototype, les données (toujours statiques) sont désormais chargées par le frontend à travers le réseau immédiatement après un premier affichage à vide. Ce comportement, plus réaliste, n'a pour effet qu'une requête supplémentaire par page affichée.
