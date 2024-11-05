@@ -115,15 +115,22 @@ En ce qui concerne la phase d’analyse Green IT, nous avons examiné notre prot
 | **Chargement de la page (sans events)**  |   Mode "Développement"          |   🟢 B 78.68   |     2.11     |      1.41      |        128        |       22      |              1669             |
 | **Chargement de la page (sans events)**  |   Mode "Pré-Production"         |   🟢 A 90.20   |     1.79     |      1.20      |        124        |      4      |            102            |
 
-Tab 1 : Evaluation de l'impact du prototype sans événements
+Tab 1 : Evaluation de l'impact du prototype I sans événements
 
 |        **Scénario**        |         | **EcoIndex** | **Eau (cl)** | **GES(gCO2e)** | **Taille du DOM** | **Requêtes** | **Taille de la page (Ko)** |
 |:--------------------------:|:-------------------------------:|:------------:|:------------:|:--------------:|:-----------------:|:------------:|:--------------------------:|
 | **Chargement de la page (avec events)**  |   Mode "Développement"          |   🟢 B 79.37   |     2.12     |      1.41      |        138        |       22      |              1672             |
 | **Chargement de la page (avec events)**  |   Mode "Pré-Production"         |   🟢 A 89.90   |     1.80     |      1.20      |        134        |      4      |            103            |
 
-Tab 2 : Evaluation de l'impact du prototype avecf événements
+Tab 2 : Evaluation de l'impact du prototype I avec événements
 
 # Prototype n°2 : Fonctionnalités pour le scénario prioritaire avec données statiques chargées de manière dynamique
 
 Pour cette deuxième version du prototype, les données (toujours statiques) sont désormais chargées par le frontend à travers le réseau immédiatement après un premier affichage à vide. Ce comportement, plus réaliste, n'a pour effet qu'une requête supplémentaire par page affichée.
+
+|        **Scénario**        |         | **EcoIndex** | **Eau (cl)** | **GES(gCO2e)** | **Taille du DOM** | **Requêtes** | **Taille de la page (Ko)** |
+|:--------------------------:|:-------------------------------:|:------------:|:------------:|:--------------:|:-----------------:|:------------:|:--------------------------:|
+| **Chargement de la page (avec events)**  |   Mode "Développement"          |   🟢 B 79.37   |     2.12     |      1.41      |        138        |       22      |              1672             |
+| **Chargement de la page (avec events)**  |   Mode "Pré-Production"         |   🟢 A 89.90   |     1.80     |      1.20      |        134        |      4      |            103            |
+
+Tab 3 : Evaluation de l'impact du prototype II avec événements
