@@ -130,7 +130,9 @@ Pour cette deuxième version du prototype, les données (toujours statiques) son
 
 |        **Scénario**        |         | **EcoIndex** | **Eau (cl)** | **GES(gCO2e)** | **Taille du DOM** | **Requêtes** | **Taille de la page (Ko)** |
 |:--------------------------:|:-------------------------------:|:------------:|:------------:|:--------------:|:-----------------:|:------------:|:--------------------------:|
-| **Chargement de la page (avec events)**  |   Mode "Développement"          |   🟢 B 79.37   |     2.12     |      1.41      |        138        |       22      |              1672             |
-| **Chargement de la page (avec events)**  |   Mode "Pré-Production"         |   🟢 A 89.90   |     1.80     |      1.20      |        134        |      4      |            103            |
+| **Chargement de la page**  |   Mode "Développement"          |   🟢 B 78.66   |     2.14     |      1.43      |        143        |       25      |              1690             |
+| **Chargement de la page**  |   Mode "Pré-Production"         |   🟢 A 86.61   |     1.81     |      1.21      |        139        |      5      |            105            |
 
 Tab 3 : Evaluation de l'impact du prototype II avec événements
+
+Concernant l'évaluation de l'impact environemental de ce scénario, par rapport au tableau précédent (cf. Tab.2), les résultats sont quasiment identiques. On peut noter une légère augmentation pour chaque paramètre qui nous semble négligeable.
