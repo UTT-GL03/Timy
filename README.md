@@ -96,5 +96,10 @@ Pour cette première version du prototype :
 - L’échantillon de données est chargé de manière statique dans le code, permettant une visualisation immédiate des événements de la semaine.
 - Les fonctionnalités implémentées se concentrent sur le scénario prioritaire, qui permet de charger la page d’une semaine et de naviguer entre les différentes semaines.
 - Ce scénario nécessite une interface intuitive qui facilite la transition d’une semaine à l’autre tout en affichant clairement les événements programmés.
-- 
+
 Ce prototype vise à établir une base fonctionnelle pour une gestion efficace du calendrier, tout en ouvrant la voie à des améliorations futures et à des fonctionnalités plus avancées.
+<img width="947" alt="Site" src="https://github.com/user-attachments/assets/25011f9f-4f7c-4f75-82bb-913ec4cc1bbb">
+
+Pour réaliser notre agenda, nous avons utilisé la bibliothèque JavaScript Scheduele-X qui permet de gérer des événements sous forme de calendrier. De plus cette bibliothèque dispose de nombreuse fonctionnalité de personnalisation.
+
+Cette bibliothèque nous permet de réaliser un calendrier sans utiliser de fichier CSS (ce qui permet potentiellement de réduire le nombre de requête et donc de charger plus rapidement les pages).
