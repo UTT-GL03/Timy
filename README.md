@@ -104,6 +104,10 @@ Pour réaliser notre agenda, nous avons utilisé la bibliothèque JavaScript Sch
 
 Cette bibliothèque nous permet de réaliser un calendrier sans utiliser de fichier CSS (ce qui permet potentiellement de réduire le nombre de requête et donc de charger plus rapidement les pages).
 
+Pour cette première version du prototype, les fonctionnalités sont encore très limitées. Actuellement, il est nécessaire d’intégrer des options pour ajouter manuellement un événement, en supprimer, et potentiellement changer la vue de semaine à mois. De plus, la mise en forme du calendrier miniature nécessite des ajustements, car nous rencontrons un problème d’affichage des numéros des jours.
+
+En ce qui concerne la phase d’analyse Green IT, nous avons examiné notre prototype en analysant le chargement d’une page selon deux scénarios : l’un sans événements affichés et l’autre avec des événements. Cette analyse a été réalisée dans deux modes : "développement" et "pré-production". Nous avons obtenu d'excellents résultats, comparables à ceux de Zimbra Messagerie. Une différence notable est que, contrairement à Zimbra, notre application ne génère pas davantage de requêtes en fonction du nombre d’événements présents, ce qui contribue à une gestion plus efficace des ressources.
+
 |        **Scénario**        |     _(Division des étapes)_     | **EcoIndex** | **Eau (cl)** | **GES(gCO2e)** | **Taille du DOM** | **Requêtes** | **Taille de la page (Ko)** |
 |:--------------------------:|:-------------------------------:|:------------:|:------------:|:--------------:|:-----------------:|:------------:|:--------------------------:|
 | **Chargement de la page (sans events)**  |   Mode "Développement"          |   🟢 B 78.68   |     2.11     |      1.41      |        128        |       22      |              1669             |
