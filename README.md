@@ -5,7 +5,7 @@ Une application permettant de gérer son calendrier au format numérique.
 
 Nous avons choisi de travailler sur une application de type Google Calendar ou une autre application d'agenda, car nous l'utilisons régulièrement dans notre vie quotidienne, notamment pour organiser nos emplois du temps d'étudiants. Ce type d'application est très pratique, car il permet de planifier plus facilement les tâches, les rendez-vous et les échéances. Cela améliore la productivité et la gestion du temps.
 
-Nous ne sommes pas les seuls à utiliser ce genre d'application. Par exemple, l'application GOOGLE CALENDAR compte plus de 500 millions d'utilisateurs dans le monde (Source : ExplodingTopics : https://explodingtopics.com/blog/google-workspace-stats).
+Nous ne sommes pas les seuls à utiliser ce genre d'application. Par exemple, l'application GOOGLE CALENDAR compte plus de 500 millions d'utilisateurs dans le monde (Source : [ExplodingTopics](https://explodingtopics.com/blog/google-workspace-stats)).
 
 # Utilité sociale
 
@@ -17,7 +17,7 @@ De plus, dans des contextes de travail à distance ou d'emploi du temps chargé,
 
 # Effets de la numérisation
 
-L’empreinte carbone d’un agenda papier de 150 à 250 pages est similaire à celle d’un livre de format équivalent. En moyenne, la production d’un livre papier de 200 pages génère entre 1,3 et 7,5 kg d’équivalent CO₂, avec des variations dues aux pratiques de production, à l’utilisation de papier recyclé ou non, et au transport des matériaux (https://www.momox.fr/trucs-et-astuces/l-empreinte-carbone-d-un-livre/) (https://bibliotherapie-suisse.ch/livre-papier-numerique-empreinte-ecologique/).
+L’empreinte carbone d’un agenda papier de 150 à 250 pages est similaire à celle d’un livre de format équivalent. En moyenne, la production d’un livre papier de 200 pages génère entre 1,3 et 7,5 kg d’équivalent CO₂, avec des variations dues aux pratiques de production, à l’utilisation de papier recyclé ou non, et au transport des matériaux (Source : [Momox](https://www.momox.fr/trucs-et-astuces/l-empreinte-carbone-d-un-livre/) et [Bibliothérapie suisse](https://bibliotherapie-suisse.ch/livre-papier-numerique-empreinte-ecologique/)).
 
 L’impact écologique d’un agenda papier est amorti par son usage quotidien et prolongé sur une année, ce qui optimise l’empreinte liée à sa production. Cette utilisation fréquente en fait un outil relativement durable, bien que des alternatives numériques puissent encore davantage réduire l'empreinte carbone associée au papier.
 
@@ -73,7 +73,7 @@ Nous avons choisi de comparer l'impact des scénarios sur différents agenda en 
 - Outlook,
 - Zimbra Messagerie,
 
-Les résultats sont les suivants : https://github.com/UTT-GL03/Timy/blob/c439041eccb6c04562678f8e45810a7b60e8d9a0/Analyse%20GreenIT.md
+[Les résultats sont les suivants](https://github.com/UTT-GL03/Timy/blob/c439041eccb6c04562678f8e45810a7b60e8d9a0/Analyse%20GreenIT.md)
 
 L’analyse montre que Zimbra est le plus respectueux de l’environnement, avec une empreinte faible (EcoIndex A et B), une page légère, et peu de requêtes, générant ainsi moins de GES. En revanche, Google Agenda et Outlook sont beaucoup plus gourmands en ressources, avec des pages volumineuses et de nombreuses requêtes, entraînant une empreinte carbone bien plus élevée. Cependant, Zimbra présente un inconvénient : plus le nombre d’événements augmente, plus le nombre de requêtes nécessaires s’intensifie, ce qui impacte progressivement son efficacité écologique.
 
