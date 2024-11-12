@@ -88,6 +88,7 @@ L'interface est composée de deux types de "pages" distinctes :
 - Zoom sur un événement : lorsqu'un événement est sélectionné, une nouvelle page dédiée s'ouvre, affichant les détails de cet événement. Ces informations incluent le titre de l'événement, la catégorie (professionnelle, personnelle, etc.), la date, l'heure de début, la durée, le lieu, le créateur, les invités, ainsi qu'une description. Cette séparation permet de n’afficher que les informations pertinentes au bon moment, réduisant ainsi la complexité de l'interface.
 
 ![Template agenda](https://github.com/user-attachments/assets/5ffb1bb8-aa06-4069-9005-6af886492467)
+
 Fig 1 : Maquette de l'interface du prototype
 
 # Prototype n°1 : Fonctionnalités pour le scénario prioritaire avec données chargées de manière statique
