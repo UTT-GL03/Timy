@@ -4,4 +4,4 @@ scenarios:
     - path: ./benchmark/scenario1.js
       name: Consulter l'agenda
 containers:
-  - qvotidie-static_hosting-1
+  - timy-static_hosting-1
