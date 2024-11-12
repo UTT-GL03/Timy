@@ -112,14 +112,14 @@ En ce qui concerne la phase d’analyse Green IT, nous avons examiné notre prot
 
 |        **Scénario**        |         | **EcoIndex** | **Eau (cl)** | **GES(gCO2e)** | **Taille du DOM** | **Requêtes** | **Taille de la page (Ko)** |
 |:--------------------------:|:-------------------------------:|:------------:|:------------:|:--------------:|:-----------------:|:------------:|:--------------------------:|
-| **Chargement de la page (sans events)**  |   Mode "Développement"          |   🟢 B 78.68   |     2.11     |      1.41      |        128        |       22      |              1669             |
+| **Chargement de la page (sans events)**  |   Mode "Développement"          |   🟢 B 78.68   |     2.11     |      1.41      |        128        |       22      |              1 669             |
 | **Chargement de la page (sans events)**  |   Mode "Pré-Production"         |   🟢 A 90.20   |     1.79     |      1.20      |        124        |      4      |            102            |
 
 Tab 1 : Evaluation de l'impact du prototype I sans événements
 
 |        **Scénario**        |         | **EcoIndex** | **Eau (cl)** | **GES(gCO2e)** | **Taille du DOM** | **Requêtes** | **Taille de la page (Ko)** |
 |:--------------------------:|:-------------------------------:|:------------:|:------------:|:--------------:|:-----------------:|:------------:|:--------------------------:|
-| **Chargement de la page (avec events)**  |   Mode "Développement"          |   🟢 B 79.37   |     2.12     |      1.41      |        138        |       22      |              1672             |
+| **Chargement de la page (avec events)**  |   Mode "Développement"          |   🟢 B 79.37   |     2.12     |      1.41      |        138        |       22      |              1 672             |
 | **Chargement de la page (avec events)**  |   Mode "Pré-Production"         |   🟢 A 89.90   |     1.80     |      1.20      |        134        |      4      |            103            |
 
 Tab 2 : Evaluation de l'impact du prototype I avec événements
@@ -130,7 +130,7 @@ Pour cette deuxième version du prototype, les données (toujours statiques) son
 
 |        **Scénario**        |         | **EcoIndex** | **Eau (cl)** | **GES(gCO2e)** | **Taille du DOM** | **Requêtes** | **Taille de la page (Ko)** |
 |:--------------------------:|:-------------------------------:|:------------:|:------------:|:--------------:|:-----------------:|:------------:|:--------------------------:|
-| **Chargement de la page**  |   Mode "Développement"          |   🟢 B 78.66   |     2.14     |      1.43      |        143        |       25      |              1690             |
+| **Chargement de la page**  |   Mode "Développement"          |   🟢 B 78.66   |     2.14     |      1.43      |        143        |       25      |              1 690             |
 | **Chargement de la page**  |   Mode "Pré-Production"         |   🟢 A 86.61   |     1.81     |      1.21      |        139        |      5      |            105            |
 
 Tab 3 : Evaluation de l'impact du prototype II avec événements
