@@ -88,6 +88,7 @@ L'interface est composée de deux types de "pages" distinctes :
 - Zoom sur un événement : lorsqu'un événement est sélectionné, une nouvelle page dédiée s'ouvre, affichant les détails de cet événement. Ces informations incluent le titre de l'événement, la catégorie (professionnelle, personnelle, etc.), la date, l'heure de début, la durée, le lieu, le créateur, les invités, ainsi qu'une description. Cette séparation permet de n’afficher que les informations pertinentes au bon moment, réduisant ainsi la complexité de l'interface.
 
 ![Template agenda](https://github.com/user-attachments/assets/5ffb1bb8-aa06-4069-9005-6af886492467)
+Fig 1 : Maquette de l'interface du prototype
 
 # Prototype n°1 : Fonctionnalités pour le scénario prioritaire avec données chargées de manière statique
 
@@ -99,6 +100,7 @@ Pour cette première version du prototype :
 
 Ce prototype vise à établir une base fonctionnelle pour une gestion efficace du calendrier, tout en ouvrant la voie à des améliorations futures et à des fonctionnalités plus avancées.
 <img width="947" alt="Site" src="https://github.com/user-attachments/assets/25011f9f-4f7c-4f75-82bb-913ec4cc1bbb">
+Fig 2 : Prototype de la page de l'agenda
 
 Pour réaliser notre agenda, nous avons utilisé la bibliothèque JavaScript Scheduele-X qui permet de gérer des événements sous forme de calendrier. De plus cette bibliothèque dispose de nombreuses fonctionnalités de personnalisation.
 
@@ -136,3 +138,22 @@ Pour cette deuxième version du prototype, les données (toujours statiques) son
 Tab 3 : Evaluation de l'impact du prototype II avec événements
 
 Concernant l'évaluation de l'impact environemental de ce scénario, par rapport au tableau précédent (cf. Tab.2), les résultats sont quasiment identiques. On peut noter une légère augmentation pour chaque paramètre qui nous semble négligeable.
+
+### Problème rencontré
+
+Nous n'avons pas pu réaliser l'analyse des différents sites concurrents (Google Agenda, Zimbra, Outlook). En effet, pour effectuer l'analyse de ces agendas numériques, il est nécessaire de se connecter à un compte utilisateur. Or, GreenFrame n'a pas la capacité de se connecter et se contente donc d'analyser uniquement les pages de connexion. De plus, certains agendas, comme Zimbra, n'ont pas de page spécifique pour le calendrier et se contentent de changer de vue sur la page principale. Par conséquent, nous ne pouvons pas effectuer d'analyse ni comparer notre solution à celle de nos concurrents.
+
+
+
+Nous utiliserons désormais un autre logiciel, GreenFrame, qui évalue non seulement l'impact "environnemental" de la consultation, mais aussi l'impact direct de la consultation elle-même, de manière beaucoup plus fiable, en se basant sur les statistiques d'utilisation des ressources physiques : CPU, mémoire, réseau et disque.
+
+<img width="640" alt="GreenFrame Browser Scénario 1" src="https://github.com/user-attachments/assets/9410d7c2-9d71-4b6f-809c-19ba72c1124f">
+Fig 3: Consommation de ressources lors de la consultation de l'agenda.
+
+
+Lors de l'affichage de la page de l'agenda, nous pouvons observer un pic de consommation de CPU et de réseau. Mais en réalité, ce qui consomme le plus dans notre cas est l'écran. En effet, les autres composants (CPU, mémoire, disque...) ne consomment pas beaucoup, car notre application ne réalise pas de calculs complexes et ne stocke pas beaucoup d'informations pour l'instant. Ainsi, la consommation principale provient de l'écran, qui représente 94% de la consommation totale.
+
+<img width="634" alt="GreenFrame Serveur Scénario 1" src="https://github.com/user-attachments/assets/4cdfea33-4ff3-4fb3-affb-e59703fae70b">
+Fig 4 : Consommation de ressources par le navigateur lors de la consultation de l'agenda
+
+Nous avons également évalué l'impact écologique de notre partie "Serveur". Nous pouvons observer que le serveur a un impact très faible (moins de 3%). En effet, la seule tâche du serveur pour le moment est de stocker des données statistiques.
