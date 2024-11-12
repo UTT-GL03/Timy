@@ -103,6 +103,7 @@ Ce prototype vise à établir une base fonctionnelle pour une gestion efficace d
 <img width="947" alt="Site" src="https://github.com/user-attachments/assets/25011f9f-4f7c-4f75-82bb-913ec4cc1bbb">
 Fig 2 : Prototype de la page de l'agenda
 
+
 Pour réaliser notre agenda, nous avons utilisé la bibliothèque JavaScript Scheduele-X qui permet de gérer des événements sous forme de calendrier. De plus cette bibliothèque dispose de nombreuses fonctionnalités de personnalisation.
 
 Cette bibliothèque nous permet de réaliser un calendrier sans utiliser de fichier CSS (ce qui permet potentiellement de réduire le nombre de requêtes et donc de charger plus rapidement les pages).
@@ -149,12 +150,14 @@ Nous n'avons pas pu réaliser l'analyse des différents sites concurrents (Googl
 Nous utiliserons désormais un autre logiciel, GreenFrame, qui évalue non seulement l'impact "environnemental" de la consultation, mais aussi l'impact direct de la consultation elle-même, de manière beaucoup plus fiable, en se basant sur les statistiques d'utilisation des ressources physiques : CPU, mémoire, réseau et disque.
 
 <img width="640" alt="GreenFrame Browser Scénario 1" src="https://github.com/user-attachments/assets/9410d7c2-9d71-4b6f-809c-19ba72c1124f">
+
 Fig 3: Consommation de ressources lors de la consultation de l'agenda.
 
 
 Lors de l'affichage de la page de l'agenda, nous pouvons observer un pic de consommation de CPU et de réseau. Mais en réalité, ce qui consomme le plus dans notre cas est l'écran. En effet, les autres composants (CPU, mémoire, disque...) ne consomment pas beaucoup, car notre application ne réalise pas de calculs complexes et ne stocke pas beaucoup d'informations pour l'instant. Ainsi, la consommation principale provient de l'écran, qui représente 94% de la consommation totale.
 
 <img width="634" alt="GreenFrame Serveur Scénario 1" src="https://github.com/user-attachments/assets/4cdfea33-4ff3-4fb3-affb-e59703fae70b">
+
 Fig 4 : Consommation de ressources par le navigateur lors de la consultation de l'agenda
 
 Nous avons également évalué l'impact écologique de notre partie "Serveur". Nous pouvons observer que le serveur a un impact très faible (moins de 3%). En effet, la seule tâche du serveur pour le moment est de stocker des données statistiques.
