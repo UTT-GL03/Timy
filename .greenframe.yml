@@ -1,5 +1,5 @@
 baseURL: http://localhost
-projectName: TIMY
+projectName: Timy
 scenarios:
     - path: ./benchmark/scenario1.js
       name: Consulter l'agenda
