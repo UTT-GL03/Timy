@@ -3,3 +3,5 @@ projectName: Timy
 scenarios:
     - path: ./benchmark/scenario1.js
       name: Consulter l'agenda
+containers:
+  - qvotidie-static_hosting-1
