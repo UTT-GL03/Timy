@@ -17,14 +17,11 @@ De plus, dans des contextes de travail à distance ou d'emploi du temps chargé,
 
 # Effets de la numérisation
 
-L’empreinte carbone d’un agenda papier de 150 à 250 pages est similaire à celle d’un livre de format équivalent. En moyenne, la production d’un livre papier de 200 pages génère entre 1,3 et 7,5 kg d’équivalent CO₂, avec des variations dues aux pratiques de production, à l’utilisation de papier recyclé ou non, et au transport des matériaux (Source : [Momox](https://www.momox.fr/trucs-et-astuces/l-empreinte-carbone-d-un-livre/) et [Bibliothérapie suisse](https://bibliotherapie-suisse.ch/livre-papier-numerique-empreinte-ecologique/)).
+L’empreinte carbone d’un agenda papier de 150 à 250 pages est similaire à celle d’un livre de format équivalent. En moyenne, la production d’un livre papier de 200 pages génère entre 1,3 et 7,5 kg d’équivalent CO₂, avec des variations dues aux pratiques de production, à l’utilisation de papier recyclé ou non, et au transport des matériaux (Source : [Momox](https://www.momox.fr/trucs-et-astuces/l-empreinte-carbone-d-un-livre/) et [Bibliothérapie suisse](https://bibliotherapie-suisse.ch/livre-papier-numerique-empreinte-ecologique/)). Si l'on considère un impact intermédiaire de 4 kg pour un agenda papier et un usage professionnel d’environ 200 jours par an, cela représente un impact de 20 g de CO₂ par jour d’utilisation.
 
-L’impact écologique d’un agenda papier est amorti par son usage quotidien et prolongé sur une année, ce qui optimise l’empreinte liée à sa production. Cette utilisation fréquente en fait un outil relativement durable, bien que des alternatives numériques puissent encore davantage réduire l'empreinte carbone associée au papier.
+L’impact écologique d’un agenda papier est amorti par cet usage quotidien sur une année. Cependant, les alternatives numériques ont des spécificités différentes. Par exemple, si l’empreinte carbone d’une consultation numérique est estimée à environ 2 g de CO₂ (incluant les serveurs et l’affichage), l’agenda numérique dépasse l’impact quotidien d’un agenda papier lorsqu’il est consulté plus de 10 fois par jour. Ainsi, selon la fréquence d’usage, la balance écologique peut pencher en faveur du papier ou du numérique.
 
-
-La numérisation des agendas a profondément transformé la manière dont nous gérons notre temps et nos activités.
-
-Les applications d'agenda numériques offrent une flexibilité et une accessibilité bien plus grandes. Elles permettent de modifier, partager et synchroniser des événements en temps réel, ce qui simplifie la coordination entre plusieurs utilisateurs, aussi bien dans un cadre professionnel que personnel.
+Les applications d’agenda numériques offrent néanmoins des avantages uniques, comme la gestion d’un calendrier partagé entre plusieurs utilisateurs (équipes de travail, familles, ou couples). Cela simplifie la coordination en permettant de modifier, partager et synchroniser des événements en temps réel. De plus, la synchronisation entre ordinateurs et smartphones renforce leur utilité dans un environnement connecté.
 
 Cette transition vers le numérique a également permis de réduire l'utilisation du papier, contribuant ainsi à réduire la consommation de ressources physiques. En effet, chaque année, près de 10 millions d'agendas papier sont vendus.
 
