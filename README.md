@@ -170,13 +170,13 @@ Nous avons également évalué l'impact écologique de notre partie "Serveur". N
 
 Pour la troisième version du prototype, les données sont désormais stockées dans une base de données dynamique interrogeable via une API Web (CouchDB). Ce choix permet, d'une part, de faciliter l’ajout ou la modification des articles, et, d'autre part, de confier au serveur le filtrage des données pertinentes, rendant ainsi le système plus structuré et évolutif.
 
-Dans ce deuxième prototype, les mesures révèlent une légère diminution des paramètres évalués, notamment une réduction de la charge CPU, du trafic réseau, et des ressources liées à l'affichage (screen). Ces améliorations, bien que modestes, témoignent d’une optimisation progressive des performances du système.
+Dans ce deuxième prototype, les mesures révèlent une forte augmentation de la charge CPU, passant de 2.1 à 3.3, tandis que les autres paramètres évalués, tels que le trafic réseau, affiche une très légère baisse, et les ressources liées à l'affichage (screen) restent stables. Cette hausse du CPU indique une intensification des calculs ou traitements requis.
 
 <img width="596" alt="GREENFRAME BROWSER 45" src="https://github.com/user-attachments/assets/01c1e23f-3e0c-466b-911f-7a9084b28ac7">
 
 Fig 5 : Consommation de ressources lors de la consultation de l'agenda (à l'aide d'une base de données)
 
-Lors du chargement de la page de l’agenda, les mesures montrent que, pour la partie serveur, la charge réseau diminue très légèrement, avec une réduction d’environ 2 %. Cette optimisation marginale reflète un début d’amélioration dans la gestion des ressources côté serveur.
+Cette baisse de l'impact réseau est néanmoins contrebalancée par une augmentation de l'utilisation du CPU, notamment par la base de données, dont la sollicitation semble persistante. Cette dynamique suggère que, bien que le réseau bénéficie d’une certaine optimisation, la gestion du traitement des données reste un domaine clé pour améliorer l'efficacité du système global.
 
 <img width="593" alt="GREEENFRAM SERVE 45" src="https://github.com/user-attachments/assets/1114b3d4-5d7d-44f2-8d14-3ec413bf9028">
 
