@@ -172,13 +172,14 @@ Pour la troisième version du prototype, les données sont désormais stockées 
 
 Dans ce deuxième prototype, les mesures révèlent une forte augmentation de la charge CPU, passant de 2.1 à 3.3, tandis que les autres paramètres évalués, tels que le trafic réseau, affiche une très légère baisse, et les ressources liées à l'affichage (screen) restent stables. Cette hausse du CPU indique une intensification des calculs ou traitements requis.
 
-<img width="596" alt="GREENFRAME BROWSER 45" src="https://github.com/user-attachments/assets/01c1e23f-3e0c-466b-911f-7a9084b28ac7">
 
-Fig 5 : Consommation de ressources lors de la consultation de l'agenda (à l'aide d'une base de données)
+<img width="609" alt="augmentation" src="https://github.com/user-attachments/assets/c45aa016-b391-4956-80de-52a65adcbf0d">
+<img width="603" alt="augmentation2" src="https://github.com/user-attachments/assets/420a4bf4-4981-4c74-ac2d-bac4790a48a3">
+
+
+Fig 5 : Comparaison de l'impact de la consultation de la page d'un article entre les prototypes 3 (en haut) et 2 (en bas)
 
 Cette baisse de l'impact réseau est néanmoins contrebalancée par une augmentation de l'utilisation du CPU, notamment par la base de données, dont la sollicitation semble persistante. Cette dynamique suggère que, bien que le réseau bénéficie d’une certaine optimisation, la gestion du traitement des données reste un domaine clé pour améliorer l'efficacité du système global.
 
-<img width="593" alt="GREEENFRAM SERVE 45" src="https://github.com/user-attachments/assets/1114b3d4-5d7d-44f2-8d14-3ec413bf9028">
 
-Fig 6 : Profil dans le temps de l'impact de la base de données lors de la consultation de l'agenda.
 
