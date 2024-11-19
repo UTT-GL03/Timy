@@ -145,15 +145,12 @@ Tab 3 : Evaluation de l'impact du prototype II avec événements
 
 Concernant l'évaluation de l'impact environemental de ce scénario, par rapport au tableau précédent (cf. Tab.2), les résultats sont quasiment identiques. On peut noter une légère augmentation pour chaque paramètre qui nous semble négligeable.
 
-### Problème rencontré
-
-Nous n'avons pas pu réaliser l'analyse des différents sites concurrents (Google Agenda, Zimbra, Outlook). En effet, pour effectuer l'analyse de ces agendas numériques, il est nécessaire de se connecter à un compte utilisateur. Or, GreenFrame n'a pas la capacité de se connecter et se contente donc d'analyser uniquement les pages de connexion. De plus, certains agendas, comme Zimbra, n'ont pas de page spécifique pour le calendrier et se contentent de changer de vue sur la page principale. Par conséquent, nous ne pouvons pas effectuer d'analyse ni comparer notre solution à celle de nos concurrents.
+Nous utiliserons désormais un autre logiciel, GreenFrame, qui évalue non seulement l'impact "environnemental" de la consultation, mais aussi l'impact direct de la consultation elle-même, de manière beaucoup plus fiable, en se basant sur les statistiques d'utilisation des ressources physiques : CPU, mémoire, réseau et disque. 
 
 
+*Problème rencontré : Nous n'avons pas pu réaliser l'analyse des différents sites concurrents (Google Agenda, Zimbra, Outlook). En effet, pour effectuer l'analyse de ces agendas numériques, il est nécessaire de se connecter à un compte utilisateur. GreenFrame ne dispose pas de la capacité de se connecter automatiquement et se limite donc à analyser les pages de connexion. Cependant, en utilisant l'interface en ligne de commande, il est possible de créer un scénario personnalisé avec Playwright. Mais la synchronisation des actions est complexe, ce qui rend cette approche peu recommandée pour ce cas. De plus, la gestion des mots de passe personnels nécessite une attention particulière pour éviter toute fuite de données.*
 
-Nous utiliserons désormais un autre logiciel, GreenFrame, qui évalue non seulement l'impact "environnemental" de la consultation, mais aussi l'impact direct de la consultation elle-même, de manière beaucoup plus fiable, en se basant sur les statistiques d'utilisation des ressources physiques : CPU, mémoire, réseau et disque.
-
-<img width="640" alt="GreenFrame Browser Scénario 1" src="https://github.com/user-attachments/assets/9410d7c2-9d71-4b6f-809c-19ba72c1124f">
+\<img width="640" alt="GreenFrame Browser Scénario 1" src="https://github.com/user-attachments/assets/9410d7c2-9d71-4b6f-809c-19ba72c1124f">
 
 Fig 3: Consommation de ressources lors de la consultation de l'agenda.
 
@@ -181,5 +178,8 @@ Fig 5 : Comparaison de l'impact de la consultation de la page d'un article entre
 
 Cette baisse de l'impact réseau est néanmoins contrebalancée par une augmentation de l'utilisation du CPU, notamment par la base de données, dont la sollicitation semble persistante. Cette dynamique suggère que, bien que le réseau bénéficie d’une certaine optimisation, la gestion du traitement des données reste un domaine clé pour améliorer l'efficacité du système global.
 
+<img width="602" alt="banckend" src="https://github.com/user-attachments/assets/4b6d399b-c81a-476b-b107-97a78d7ba10e">
+
+Fig 6 : Profil dans le temps de l'impact de la base de données lors de la consultation de la page d'un article.
 
 
