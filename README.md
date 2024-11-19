@@ -107,13 +107,17 @@ Fig 2 : Prototype de la page de l'agenda
 
 
 
-Pour réaliser notre agenda, nous avons utilisé la bibliothèque JavaScript Scheduele-X qui permet de gérer des événements sous forme de calendrier. De plus cette bibliothèque dispose de nombreuses fonctionnalités de personnalisation.
+Pour réaliser notre agenda, nous avons utilisé la bibliothèque JavaScript Schedule-X qui permet de gérer des événements sous forme de calendrier. De plus cette bibliothèque dispose de nombreuses fonctionnalités de personnalisation.
 
-Cette bibliothèque nous permet de réaliser un calendrier sans utiliser de fichier CSS (ce qui permet potentiellement de réduire le nombre de requêtes et donc de charger plus rapidement les pages).
+Nous avons choisi d'utiliser cette bibliothèque car elle permet de créer un calendrier de manière simple et rapide, sans nécessiter de configuration complexe. Son intégration est facilitée par une gestion automatique des styles. Cette bibliothèque nous semblait simple d'utilisation, mais nous avons eu par la suite des difficultés à ajouter nos données (des événements) et les afficher dans l'agenda.
 
 Pour cette première version du prototype, les fonctionnalités sont encore très limitées. Actuellement, il est nécessaire d’intégrer des options pour ajouter manuellement un événement, en supprimer, et potentiellement changer la vue de semaine à mois. De plus, la mise en forme du calendrier miniature nécessite des ajustements, car nous rencontrons un problème d’affichage des numéros des jours.
 
-En ce qui concerne la phase d’analyse Green IT, nous avons examiné notre prototype en analysant le chargement d’une page selon deux scénarios : l’un sans événements affichés et l’autre avec des événements. Cette analyse a été réalisée dans deux modes : "développement" et "pré-production". Nous avons obtenu d'excellents résultats, comparables à ceux de Zimbra Messagerie. Une différence notable est que, contrairement à Zimbra, notre application ne génère pas davantage de requêtes en fonction du nombre d’événements présents, ce qui contribue à une gestion plus efficace des ressources.
+En ce qui concerne la phase d’analyse Green IT, nous avons examiné notre prototype en analysant le chargement d’une page selon deux scénarios : l’un sans événements affichés et l’autre avec des événements. Cette analyse a été réalisée dans deux modes : "développement" et "pré-production". 
+
+Tester en mode développement permet de corriger rapidement les bugs et de valider les fonctionnalités dans un environnement contrôlé. En pré-production, on teste l'application dans des conditions proches de la production, ce qui permet de vérifier sa performance et sa stabilité avant le déploiement.
+
+Nous avons obtenu d'excellents résultats, comparables à ceux de Zimbra Messagerie. Une différence notable est que, contrairement à Zimbra, notre application ne génère pas davantage de requêtes en fonction du nombre d’événements présents, ce qui contribue à une gestion plus efficace des ressources.
 
 
 
@@ -163,7 +167,7 @@ Lors de l'affichage de la page de l'agenda, nous pouvons observer un pic de cons
 
 Fig 4 : Consommation de ressources par le navigateur lors de la consultation de l'agenda
 
-Nous avons également évalué l'impact écologique de notre partie "Serveur". Nous pouvons observer que le serveur a un impact très faible (moins de 3%). En effet, la seule tâche du serveur pour le moment est de stocker des données statistiques.
+Nous avons également évalué l'impact écologique de notre partie "Serveur". Nous pouvons observer que le serveur a un impact très faible (moins de 3%). En effet, la seule tâche du serveur pour le moment est de stocker des données statiques.
 
 # Prototype n°3 : Fonctionnalités pour le scénario prioritaire avec données stockées dans une base de données
 
