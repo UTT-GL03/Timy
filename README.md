@@ -171,9 +171,13 @@ Pour la troisième version du prototype, les données sont désormais stockées 
 
 Dans ce deuxième prototype, les mesures révèlent une légère diminution des paramètres évalués, notamment une réduction de la charge CPU, du trafic réseau, et des ressources liées à l'affichage (screen). Ces améliorations, bien que modestes, témoignent d’une optimisation progressive des performances du système.
 
+<img width="596" alt="GREENFRAME BROWSER 45" src="https://github.com/user-attachments/assets/01c1e23f-3e0c-466b-911f-7a9084b28ac7">
+
 Fig 5 : Consommation de ressources lors de la consultation de l'agenda (à l'aide d'une base de données)
 
 Lors du chargement de la page de l’agenda, les mesures montrent que, pour la partie serveur, la charge réseau diminue très légèrement, avec une réduction d’environ 2 %. Cette optimisation marginale reflète un début d’amélioration dans la gestion des ressources côté serveur.
+
+<img width="593" alt="GREEENFRAM SERVE 45" src="https://github.com/user-attachments/assets/1114b3d4-5d7d-44f2-8d14-3ec413bf9028">
 
 Fig 6 : Profil dans le temps de l'impact de la base de données lors de la consultation de l'agenda.
 
