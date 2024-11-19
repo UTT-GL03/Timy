@@ -147,9 +147,6 @@ Concernant l'évaluation de l'impact environemental de ce scénario, par rapport
 
 Nous utiliserons désormais un autre logiciel, GreenFrame, qui évalue non seulement l'impact "environnemental" de la consultation, mais aussi l'impact direct de la consultation elle-même, de manière beaucoup plus fiable, en se basant sur les statistiques d'utilisation des ressources physiques : CPU, mémoire, réseau et disque. 
 
-
-*Problème rencontré : Nous n'avons pas pu réaliser l'analyse des différents sites concurrents (Google Agenda, Zimbra, Outlook). En effet, pour effectuer l'analyse de ces agendas numériques, il est nécessaire de se connecter à un compte utilisateur. GreenFrame ne dispose pas de la capacité de se connecter automatiquement et se limite donc à analyser les pages de connexion. Cependant, en utilisant l'interface en ligne de commande, il est possible de créer un scénario personnalisé avec Playwright. Mais la synchronisation des actions est complexe, ce qui rend cette approche peu recommandée pour ce cas. De plus, la gestion des mots de passe personnels nécessite une attention particulière pour éviter toute fuite de données.*
-
 <img width="640" alt="GreenFrame Browser Scénario 1" src="https://github.com/user-attachments/assets/9410d7c2-9d71-4b6f-809c-19ba72c1124f">
 
 Fig 3: Consommation de ressources lors de la consultation de l'agenda.
@@ -162,6 +159,8 @@ Lors de l'affichage de la page de l'agenda, nous pouvons observer un pic de cons
 Fig 4 : Consommation de ressources par le navigateur lors de la consultation de l'agenda
 
 Nous avons également évalué l'impact écologique de notre partie "Serveur". Nous pouvons observer que le serveur a un impact très faible (moins de 3%). En effet, la seule tâche du serveur pour le moment est de stocker des données statiques.
+
+*Problème rencontré : Nous n'avons pas pu réaliser l'analyse des différents sites concurrents (Google Agenda, Zimbra, Outlook). En effet, pour effectuer l'analyse de ces agendas numériques, il est nécessaire de se connecter à un compte utilisateur. GreenFrame ne dispose pas de la capacité de se connecter automatiquement et se limite donc à analyser les pages de connexion. Cependant, en utilisant l'interface en ligne de commande, il est possible de créer un scénario personnalisé avec Playwright. Mais la synchronisation des actions est complexe, ce qui rend cette approche peu recommandée pour ce cas. De plus, la gestion des mots de passe personnels nécessite une attention particulière pour éviter toute fuite de données.*
 
 # Prototype n°3 : Fonctionnalités pour le scénario prioritaire avec données stockées dans une base de données
 
