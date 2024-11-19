@@ -108,7 +108,7 @@ Pour réaliser notre agenda, nous avons utilisé la bibliothèque JavaScript Sch
 
 Nous avons choisi d'utiliser cette bibliothèque car elle permet de créer un calendrier de manière simple et rapide, sans nécessiter de configuration complexe. Son intégration est facilitée par une gestion automatique des styles. Cette bibliothèque nous semblait simple d'utilisation, mais nous avons eu par la suite des difficultés à ajouter nos données (des événements) et les afficher dans l'agenda.
 
-Pour cette première version du prototype, les fonctionnalités sont encore très limitées. Actuellement, il est nécessaire d’intégrer des options pour ajouter manuellement un événement, en supprimer, et potentiellement changer la vue de semaine à mois. De plus, la mise en forme du calendrier miniature nécessite des ajustements, car nous rencontrons un problème d’affichage des numéros des jours.
+Pour cette première version du prototype, les fonctionnalités sont encore très limitées. Actuellement, il est nécessaire d’intégrer des options pour ajouter manuellement un événement, en supprimer, et potentiellement changer la vue de semaine à mois.
 
 En ce qui concerne la phase d’analyse Green IT, nous avons examiné notre prototype en analysant le chargement d’une page selon deux scénarios : l’un sans événements affichés et l’autre avec des événements. Cette analyse a été réalisée dans deux modes : "développement" et "pré-production". 
 
