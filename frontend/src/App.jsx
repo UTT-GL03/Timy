@@ -13,14 +13,12 @@ function App() {
   const calendar = createCalendar(
     { 
       views: [createViewWeek()],
-      //selectedDate: '2024-10-30' 
     },
     [eventsServicePlugin]
   )
-  // const [calendarEvents, setCalendarEvents] = useState([]);
-  //console.log("Événements du calendrier :", calendarEvents);
+
   useEffect(() => {
-    fetch('/sample_data.json')
+    fetch('http://localhost:5984/evenements/_all_docs?include_docs=true')
       .then((response) => {
         if (!response.ok) {
           throw new Error("Erreur lors du chargement des données");
@@ -30,18 +28,19 @@ function App() {
       .then((data) => {
         
         // Transformer les données pour les adapter au format du calendrier
-        const events = data.evenements.map((event, index) => {
+        const events = data.rows.map((row) => {
+          const event = row.doc; // Les données sont dans le champ 'doc'
           const startDateTime = `${event.date} ${event.beginning}`;
           const endDateTime = calculateEndDateTime(event.date, event.beginning, event.duration);
-
+        
           return {
-            id: String(index + 1),
+            id: row.id, // Utilise l'ID unique de CouchDB
             title: event.title,
             start: startDateTime,
             end: endDateTime,
-
-          }
+          };
         });
+        
         console.log(calendar);
         calendar.eventsService.set(events);
       })
