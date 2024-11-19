@@ -5,3 +5,4 @@ scenarios:
       name: Consulter l'agenda
 containers:
   - timy-static_hosting-1
+  - timy-backend-1
