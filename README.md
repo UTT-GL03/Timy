@@ -164,3 +164,16 @@ Lors de l'affichage de la page de l'agenda, nous pouvons observer un pic de cons
 Fig 4 : Consommation de ressources par le navigateur lors de la consultation de l'agenda
 
 Nous avons également évalué l'impact écologique de notre partie "Serveur". Nous pouvons observer que le serveur a un impact très faible (moins de 3%). En effet, la seule tâche du serveur pour le moment est de stocker des données statistiques.
+
+# Prototype n°3 : Fonctionnalités pour le scénario prioritaire avec données stockées dans une base de données
+
+Pour la troisième version du prototype, les données sont désormais stockées dans une base de données dynamique interrogeable via une API Web (CouchDB). Ce choix permet, d'une part, de faciliter l’ajout ou la modification des articles, et, d'autre part, de confier au serveur le filtrage des données pertinentes, rendant ainsi le système plus structuré et évolutif.
+
+Dans ce deuxième prototype, les mesures révèlent une légère diminution des paramètres évalués, notamment une réduction de la charge CPU, du trafic réseau, et des ressources liées à l'affichage (screen). Ces améliorations, bien que modestes, témoignent d’une optimisation progressive des performances du système.
+
+Fig 5 : Consommation de ressources lors de la consultation de l'agenda (à l'aide d'une base de données)
+
+Lors du chargement de la page de l’agenda, les mesures montrent que, pour la partie serveur, la charge réseau diminue très légèrement, avec une réduction d’environ 2 %. Cette optimisation marginale reflète un début d’amélioration dans la gestion des ressources côté serveur.
+
+Fig 6 : Profil dans le temps de l'impact de la base de données lors de la consultation de l'agenda.
+
