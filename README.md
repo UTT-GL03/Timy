@@ -181,4 +181,10 @@ Cette baisse de l'impact réseau est néanmoins contrebalancée par une augmenta
 
 Fig 6 : Profil dans le temps de l'impact de la base de données lors de la consultation de la page d'un article.
 
+# Prototype n°4 : Fonctionnalités pour le scénario prioritaire avec filtrage des données
 
+Dans le cas de notre agenda numérique, l'augmentation des données provient de l'ajout continu d'événements au fil du temps. Les agendas nécessitent la conservation d'un historique pour permettre aux utilisateurs de consulter des événements passés, voire de les modifier ou de les supprimer.
+
+Cette fonctionnalité (qui consomme de la ressources de stockage), est essentielle pour répondre aux besoins des utilisateurs qui souhaitent garder une trace de leur organisation.
+
+L'augmentation du volume des données est linéaire : en supposant une moyenne de 10 événements créés par jour, la base de données contiendra environ 300 événements à la fin du premier mois, 3600 événements après un an, et ainsi de suite.
