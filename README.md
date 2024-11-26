@@ -187,4 +187,4 @@ Dans le cas de notre agenda numérique, l'augmentation des données provient de 
 
 Cette fonctionnalité (qui consomme de la ressources de stockage), est essentielle pour répondre aux besoins des utilisateurs qui souhaitent garder une trace de leur organisation.
 
-L'augmentation du volume des données est linéaire : en supposant une moyenne de 5 événements créés par jour, la base de données contiendra environ 300 événements à la fin du premier mois, 3600 événements après un an, et ainsi de suite.
+L'augmentation du volume des données est linéaire : en supposant une moyenne de 3 événements créés par jour par personne dans une entreprise de 100 personnes pendant 365 jours, la base de données contiendra environ 110 000 événements après un an.
