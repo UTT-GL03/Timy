@@ -12,8 +12,8 @@ services:
     ports:
       - 5984:5984
     environment:
-      - COUCHDB_USER=admin
-      - COUCHDB_PASSWORD=adminpassword
+      - COUCHDB_USER="TO_BE_CHANGED"
+      - COUCHDB_PASSWORD="TO_BE_CHANGED"
 
     healthcheck:
       test: curl -f http://localhost:5984/_up || exit 1
