@@ -187,4 +187,23 @@ Dans le cas de notre agenda numérique, l'augmentation des données provient de 
 
 Cette fonctionnalité (qui consomme de la ressources de stockage), est essentielle pour répondre aux besoins des utilisateurs qui souhaitent garder une trace de leur organisation.
 
-L'augmentation du volume des données est linéaire : en supposant une moyenne de 3 événements créés par jour par personne dans une entreprise de 100 personnes pendant 365 jours, la base de données contiendra environ 110 000 événements après un an.
+L'augmentation du volume des données est linéaire : en supposant une moyenne de 3 événements créés par jour par personne dans une entreprise de 10 personnes pendant 365 jours, la base de données contiendra environ 11 000 événements après un an.
+
+# Évolution de l'impact environnemental avant correction
+
+La figure 7 illustre l'impact du passage à l'échelle de 30 événements à 11 000 évémements (correspondant à 1 an d'événement pour une entreprise de 10 personnes avec en moyenne 3 événements par personne et par jour). On observe, sur le backend, une multiplication par 5 de l'impact du processeur, et surtout, concernant l'impact du réseau, une multiplication par 15 pour le frontend et une augmentation de 1.1 à 8.4 mWh pour le backend.
+
+
+
+# Critères de filtrage pour limiter la quantité de données chargées
+
+Dans un agenda papier, une vue hebdomadaire ou mensuelle n’affiche que les événements prévus sur cette période. Cette logique doit être transposée au numérique afin de maintenir une quantité de données cohérente et éviter de surcharger le système ou l’interface.
+
+Une stratégie possible serait  de filtrer les données temporellement.
+ 
+   - Charger les événements correspondant à la période actuellement visible dans l'agenda (par exemple, une semaine pour une vue hebdomadaire).
+
+   - Cette stratégie nécessite de filtrer les événements en fonction de leurs dates de début et de fin.
+
+Une autre stratégie possible serait de filtrer par créateur d'événement. Néamoins pour le moment nous nous concentrons sur le premier filtre.
+

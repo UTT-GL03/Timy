@@ -18,7 +18,32 @@ function App() {
   )
 
   useEffect(() => {
-    fetch('http://localhost:5984/evenements/_all_docs?include_docs=true')
+    // Calculer les dates de début et de fin pour une période de 7 jours
+    const today = new Date();
+    const sevenDaysLater = new Date();
+    sevenDaysLater.setDate(today.getDate() + 7);
+  
+    // Formater les dates pour correspondre au format "YYYY-MM-DD" dans CouchDB
+    const startDate = today.toISOString().split('T')[0]; // Format YYYY-MM-DD
+    const endDate = sevenDaysLater.toISOString().split('T')[0]; // Format YYYY-MM-DD
+    // Effectuer la requête Mango avec le filtre sur la période
+    fetch('http://localhost:5984/evenements/_find', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        selector: {
+          date: {
+            $gte: startDate, // Date de début
+            $lt: endDate,    // Date de fin
+          },
+        },
+        limit: 250,
+        fields: ["_id", "title", "date", "beginning", "duration"], // Récupérer les champs nécessaires
+      }),
+    })
+    
       .then((response) => {
         if (!response.ok) {
           throw new Error("Erreur lors du chargement des données");
@@ -26,28 +51,26 @@ function App() {
         return response.json();
       })
       .then((data) => {
-        
         // Transformer les données pour les adapter au format du calendrier
-        const events = data.rows.map((row) => {
-          const event = row.doc; // Les données sont dans le champ 'doc'
+        const events = data.docs.map((event) => {
           const startDateTime = `${event.date} ${event.beginning}`;
           const endDateTime = calculateEndDateTime(event.date, event.beginning, event.duration);
-        
+  
           return {
-            id: row.id, // Utilise l'ID unique de CouchDB
+            id: event._id, // Utilise l'ID unique de CouchDB
             title: event.title,
             start: startDateTime,
             end: endDateTime,
           };
         });
-        
+  
         console.log(calendar);
-        calendar.eventsService.set(events);
+        calendar.eventsService.set(events); // Mettre à jour les événements du calendrier
       })
       .catch((error) => {
         console.error("Erreur lors du chargement des données :", error);
       });
-  }, []); // Le tableau vide [] signifie que useEffect s'exécute une seule fois au montage
+  }, []);  // Le tableau vide [] signifie que useEffect s'exécute une seule fois au montage
 
   // Créer l'application de calendrier une fois que les événements sont prêts
  
