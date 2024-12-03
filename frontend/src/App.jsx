@@ -38,9 +38,12 @@ function App() {
             $gte: startDate, // Date de début
             $lt: endDate,    // Date de fin
           },
+          creator: {
+            $eq: "Ayoub",
+          },
         },
         limit: 250,
-        fields: ["_id", "title", "date", "beginning", "duration"], // Récupérer les champs nécessaires
+        fields: ["_id", "title", "date", "beginning", "duration", "creator"], // Récupérer les champs nécessaires
       }),
     })
     

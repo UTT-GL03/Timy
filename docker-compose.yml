@@ -55,7 +55,7 @@ services:
       - ./backend/by_date.json:/by_date.json
     command:
       - |
-        curl -X POST http://backend:5984/qvotidie/_index -H "Content-Type: application/json" -d @/by_date.json -u '${COUCHDB_USER}:${COUCHDB_PASSWORD}'
+        curl -X POST http://backend:5984/evenements/_index -H "Content-Type: application/json" -d @/by_date.json -u '${COUCHDB_USER}:${COUCHDB_PASSWORD}'
     depends_on:
       accessible_backend:
         condition: service_completed_successfully
