@@ -189,21 +189,25 @@ Cette fonctionnalité (qui consomme de la ressources de stockage), est essentiel
 
 L'augmentation du volume des données est linéaire : en supposant une moyenne de 3 événements créés par jour par personne dans une entreprise de 10 personnes pendant 365 jours, la base de données contiendra environ 11 000 événements après un an.
 
-# Évolution de l'impact environnemental avant correction
+## Évolution de l'impact environnemental avant correction
 
 La figure 7 illustre l'impact du passage à l'échelle de 30 événements à 11 000 évémements (correspondant à 1 an d'événement pour une entreprise de 10 personnes avec en moyenne 3 événements par personne et par jour). On observe, sur le backend, une multiplication par 5 de l'impact du processeur, et surtout, concernant l'impact du réseau, une multiplication par 15 pour le frontend et une augmentation de 1.1 à 8.4 mWh pour le backend.
 
+<img width="443" alt="Screen 1" src="https://github.com/user-attachments/assets/35e000ac-2112-44a0-9ec2-5b3054956350">
+<img width="448" alt="screen 2" src="https://github.com/user-attachments/assets/d7bae8e9-bb8b-45ec-b959-56c16c6be9a8">
+Fig 7 : Evolution de l'impact de la consultation de l'agenda en passant de 30 à 11 000 événements (Soit 1 an d'événement pour 10 personnes)
 
 
-# Critères de filtrage pour limiter la quantité de données chargées
+
+## Prise en compte du passage à l'échelle
 
 Dans un agenda papier, une vue hebdomadaire ou mensuelle n’affiche que les événements prévus sur cette période. Cette logique doit être transposée au numérique afin de maintenir une quantité de données cohérente et éviter de surcharger le système ou l’interface.
 
-Une stratégie possible serait  de filtrer les données temporellement.
+Une stratégie possible serait  de filtrer les données temporellement et par auteur.
  
    - Charger les événements correspondant à la période actuellement visible dans l'agenda (par exemple, une semaine pour une vue hebdomadaire).
 
    - Cette stratégie nécessite de filtrer les événements en fonction de leurs dates de début et de fin.
 
-Une autre stratégie possible serait de filtrer par créateur d'événement. Néamoins pour le moment nous nous concentrons sur le premier filtre.
+   - Charger les événements correspondant à un seul créateur.
 
