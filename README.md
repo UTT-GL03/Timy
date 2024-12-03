@@ -194,6 +194,7 @@ L'augmentation du volume des données est linéaire : en supposant une moyenne d
 La figure 7 illustre l'impact du passage à l'échelle de 30 événements à 11 000 évémements (correspondant à 1 an d'événement pour une entreprise de 10 personnes avec en moyenne 3 événements par personne et par jour). On observe, sur le backend, une multiplication par 5 de l'impact du processeur, et surtout, concernant l'impact du réseau, une multiplication par 15 pour le frontend et une augmentation de 1.1 à 8.4 mWh pour le backend.
 
 <img width="443" alt="Screen 1" src="https://github.com/user-attachments/assets/35e000ac-2112-44a0-9ec2-5b3054956350">
+
 <img width="448" alt="screen 2" src="https://github.com/user-attachments/assets/d7bae8e9-bb8b-45ec-b959-56c16c6be9a8">
 
 Fig 7 : Evolution de l'impact de la consultation de l'agenda en passant de 30 à 11 000 événements (Soit 1 an d'événement pour 10 personnes)
@@ -222,6 +223,12 @@ La stratégie mise en œuvre a donné les résultats escomptés : les mesures d�
 Figure 8 : Evolution de l'impact l'application avec l'augmentation de la quantité de données puis sa prise en compte
 
 Au-delà d’un simple retour à l’impact initial avant l’augmentation de la quantité de données traitées, une légère amélioration est même perceptible, notamment sur les échanges réseau entre le backend et le frontend (cf. Fig. 9). Cette amélioration s’explique par la stratégie adoptée pour filtrer les événements, qui a permis de ne plus afficher les événements sur une année complète ni ceux de 10 personnes en simultané (une présentation inutile et illisible). Par ailleurs, seuls les attributs nécessaires sont désormais transférés, ce qui réduit encore davantage la charge sur le réseau.
+
+<img width="594" alt="image" src="https://github.com/user-attachments/assets/7b1cf30b-ed0c-4804-89ff-c5fb034ab787">
+
+<img width="593" alt="image" src="https://github.com/user-attachments/assets/f5938b0e-01da-4add-8705-b7f1bea30ca7">
+
+
 
 Figure 9 : Comparaison de l'impact de l'agenda optimisée avec 11 000 évenements et non-optimisée avec 30 évenements.
 
