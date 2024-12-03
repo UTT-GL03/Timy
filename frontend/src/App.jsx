@@ -2,7 +2,7 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 import { createEventsServicePlugin } from '@schedule-x/events-service'
 import { ScheduleXCalendar } from "@schedule-x/react"
-import { createViewWeek, createCalendar } from '@schedule-x/calendar'
+import { createViewDay, createViewMonthGrid, createViewMonthAgenda,createViewWeek, createCalendar } from '@schedule-x/calendar'
 import '@schedule-x/theme-default/dist/calendar.css'
 
 import { useState, useEffect } from 'react'
@@ -12,7 +12,7 @@ const eventsServicePlugin = createEventsServicePlugin();
 function App() {
   const calendar = createCalendar(
     { 
-      views: [createViewWeek()],
+      views: [createViewWeek(), createViewMonthGrid(), createViewMonthAgenda(), createViewDay()],
     },
     [eventsServicePlugin]
   )
