@@ -216,6 +216,9 @@ Une stratégie possible serait  de filtrer les données temporellement et par au
 
 La stratégie mise en œuvre a donné les résultats escomptés : les mesures d’impact (cf. Fig. 8) montrent que son application a permis de réduire significativement l’impact environnemental, en passant de 11 000 événements à moins de 250, puis à une vingtaine.
 
-Figure 8 :
+
+<img width="577" alt="image" src="https://github.com/user-attachments/assets/01b34795-98e9-4940-8698-9623f0bec776">
+
+Figure 8 : Evolution de l'impact l'application avec l'augmentation de la quantité de données puis sa prise en compte
 
 Au-delà d’un simple retour à l’impact initial avant l’augmentation de la quantité de données traitées, une légère amélioration est même perceptible, notamment sur les échanges réseau entre le backend et le frontend (cf. Fig. 9). Cette amélioration s’explique par la stratégie adoptée pour filtrer les événements, qui a permis de ne plus afficher les événements sur une année complète ni ceux de 10 personnes en simultané (une présentation inutile et illisible). Par ailleurs, seuls les attributs nécessaires sont désormais transférés, ce qui réduit encore davantage la charge sur le réseau.
