@@ -195,6 +195,7 @@ La figure 7 illustre l'impact du passage à l'échelle de 30 événements à 11 
 
 <img width="443" alt="Screen 1" src="https://github.com/user-attachments/assets/35e000ac-2112-44a0-9ec2-5b3054956350">
 <img width="448" alt="screen 2" src="https://github.com/user-attachments/assets/d7bae8e9-bb8b-45ec-b959-56c16c6be9a8">
+
 Fig 7 : Evolution de l'impact de la consultation de l'agenda en passant de 30 à 11 000 événements (Soit 1 an d'événement pour 10 personnes)
 
 
@@ -211,3 +212,10 @@ Une stratégie possible serait  de filtrer les données temporellement et par au
 
    - Charger les événements correspondant à un seul créateur.
 
+## Évolution de l'impact environnemental après correction
+
+La stratégie mise en œuvre a donné les résultats escomptés : les mesures d’impact (cf. Fig. 8) montrent que son application a permis de réduire significativement l’impact environnemental, en passant de 11 000 événements à moins de 250, puis à une vingtaine.
+
+Figure 8 :
+
+Au-delà d’un simple retour à l’impact initial avant l’augmentation de la quantité de données traitées, une légère amélioration est même perceptible, notamment sur les échanges réseau entre le backend et le frontend (cf. Fig. 9). Cette amélioration s’explique par la stratégie adoptée pour filtrer les événements, qui a permis de ne plus afficher les événements sur une année complète ni ceux de 10 personnes en simultané (une présentation inutile et illisible). Par ailleurs, seuls les attributs nécessaires sont désormais transférés, ce qui réduit encore davantage la charge sur le réseau.
