@@ -222,3 +222,7 @@ La stratégie mise en œuvre a donné les résultats escomptés : les mesures d�
 Figure 8 : Evolution de l'impact l'application avec l'augmentation de la quantité de données puis sa prise en compte
 
 Au-delà d’un simple retour à l’impact initial avant l’augmentation de la quantité de données traitées, une légère amélioration est même perceptible, notamment sur les échanges réseau entre le backend et le frontend (cf. Fig. 9). Cette amélioration s’explique par la stratégie adoptée pour filtrer les événements, qui a permis de ne plus afficher les événements sur une année complète ni ceux de 10 personnes en simultané (une présentation inutile et illisible). Par ailleurs, seuls les attributs nécessaires sont désormais transférés, ce qui réduit encore davantage la charge sur le réseau.
+
+Figure 9 : Comparaison de l'impact de l'agenda optimisée avec 11 000 évenements et non-optimisée avec 30 évenements.
+
+##Perspectives
