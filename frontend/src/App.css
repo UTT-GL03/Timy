@@ -11,3 +11,36 @@ time {
   font-size: smaller;
 }
 
+
+
+
+.sx__date-picker-popup{
+  width: 800px; /* Changez cette valeur selon vos besoins */
+  height: 1000px; /* Changez cette valeur selon vos besoins */
+}
+
+.sx__month-grid-day{
+  height: 150px;
+}
+
+.sx__time-grid-event-title{
+  font-size: 15px;
+}
+
+/*.sx__calendar-header{
+  background-color: aqua;
+}
+
+.sx__calendar{
+  background-color: blueviolet;
+}*/
+
+/* Classe pour le fond blanc */
+.background-white {
+  background-color: white;
+}
+
+/* Classe pour le fond noir */
+.background-black {
+  background-color: black;
+}

@@ -1,20 +1,31 @@
 import reactLogo from './assets/react.svg'
-import './App.css'
 import { createEventsServicePlugin } from '@schedule-x/events-service'
 import { ScheduleXCalendar } from "@schedule-x/react"
 import { createViewDay, createViewMonthGrid, createViewMonthAgenda,createViewWeek, createCalendar } from '@schedule-x/calendar'
+import { createCurrentTimePlugin } from '@schedule-x/current-time'
 import '@schedule-x/theme-default/dist/calendar.css'
+import '@schedule-x/theme-default/dist/index.css'
+import './App.css'
+
+
 
 import { useState, useEffect } from 'react'
 
 const eventsServicePlugin = createEventsServicePlugin();
+const currentTimePlugin = createCurrentTimePlugin();
+
 
 function App() {
+
+
+
+
   const calendar = createCalendar(
     { 
       views: [createViewWeek(), createViewMonthGrid(), createViewMonthAgenda(), createViewDay()],
+      locale: 'fr-FR',
     },
-    [eventsServicePlugin]
+    [eventsServicePlugin, currentTimePlugin]
   )
 
   useEffect(() => {
