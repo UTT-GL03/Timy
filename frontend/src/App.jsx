@@ -3,6 +3,7 @@ import { createEventsServicePlugin } from '@schedule-x/events-service'
 import { ScheduleXCalendar } from "@schedule-x/react"
 import { createViewDay, createViewMonthGrid, createViewMonthAgenda,createViewWeek, createCalendar } from '@schedule-x/calendar'
 import { createCurrentTimePlugin } from '@schedule-x/current-time'
+import { createEventModalPlugin } from '@schedule-x/event-modal'
 import '@schedule-x/theme-default/dist/calendar.css'
 import '@schedule-x/theme-default/dist/index.css'
 import './App.css'
@@ -13,7 +14,7 @@ import { useState, useEffect } from 'react'
 
 const eventsServicePlugin = createEventsServicePlugin();
 const currentTimePlugin = createCurrentTimePlugin();
-
+const eventModal = createEventModalPlugin()
 
 function App() {
 
@@ -25,8 +26,10 @@ function App() {
       views: [createViewWeek(), createViewMonthGrid(), createViewMonthAgenda(), createViewDay()],
       locale: 'fr-FR',
     },
-    [eventsServicePlugin, currentTimePlugin]
+    [eventsServicePlugin, currentTimePlugin, eventModal]
   )
+
+  eventModal.close();
 
   useEffect(() => {
     // Calculer les dates de début et de fin pour une période de 7 jours
