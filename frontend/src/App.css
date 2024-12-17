@@ -11,6 +11,21 @@ time {
   font-size: smaller;
 }
 
+header h1{
+  background-color: #e9ccf1;
+  color: #7a1896;
+}
+
+body {
+  background-color: #e9ccf1;
+}
+
+.add-event-button {
+position: absolute  ;
+right: 10px;
+top: 5px;
+
+}
 
 
 
@@ -44,3 +59,83 @@ time {
 .background-black {
   background-color: black;
 }
+
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: rgb(239, 224, 237);
+  padding: 20px;
+  border-radius: 10px;
+  max-height: 80%; 
+  overflow-y: auto; 
+  width: 90%;
+  max-width: 500px;
+  font-size: 20px;
+
+}
+
+.popup-content h2 {
+  margin-top: 0;
+  color:#7a1896;
+}
+
+
+.popup-content {   
+  margin-top: 0;
+  background-color: rgb(255, 255, 255)
+}
+
+.popup-content form label {
+  display: block;
+  margin-bottom: 10px;
+  color:#bc73d9;
+}
+
+.popup-content form input,
+.popup-content form textarea {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #e6cde9;
+  color: #7a1896;
+}
+
+.popup-content form button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.popup-content form button[type="submit"] {
+  background-color: #8bca84;
+  color: white;
+}
+
+.popup-content form button[type="button"] {
+  background-color: #676464;
+  color: white;
+  justify-content: center;
+  
+}
+
+

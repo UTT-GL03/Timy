@@ -17,11 +17,72 @@ const currentTimePlugin = createCurrentTimePlugin();
 const eventModal = createEventModalPlugin()
 
 function App() {
+// État pour gérer l'affichage du pop-up
+const [isPopupVisible, setIsPopupVisible] = useState(false);
+const [eventData, setEventData] = useState({
+  title: '',
+  date: '',
+  beginning: '',
+  duration: '',
+  location: '',
+  creator: '',
+  description: '',
+  guest: '',
+});
+
+// Fonction pour ouvrir/fermer le pop-up
+const togglePopup = () => {
+  setIsPopupVisible((prevState) => {
+    const newState = !prevState; // Inverser l'état actuel
+    if (newState === false) {
+      window.location.reload(); // Rafraîchir la page uniquement si l'état est true
+    }
+    return newState;
+  });
+};
+
+// Fonction pour gérer les changements dans le formulaire
+const handleInputChange = (e) => {
+  const { name, value } = e.target;
+  setEventData({ ...eventData, [name]: value });
+};
+
+// Fonction pour soumettre le formulaire
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  try {
+    const response = await fetch('http://localhost:5984/evenements', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(eventData),
+    });
+
+    if (response.ok) {
+      window.location.reload(); // Rafraîchit la page
+      togglePopup(); // Ferme le pop-up après la soumission
+      setEventData({
+        title: '',
+        category: '',
+        date: '',
+        beginning: '',
+        duration: '',
+        location: '',
+        creator: '',
+        description: '',
+        guest: '',
+      }); // Réinitialise le formulaire
+    } else {
+      console.error('Erreur lors de l’ajout de l’événement :', await response.text());
+    }
+  } catch (error) {
+    console.error('Erreur lors de l’ajout de l’événement :', error);
+  }
+};
 
 
-
-
-  const calendar = createCalendar(
+const calendar = createCalendar(
     { 
       views: [createViewWeek(), createViewMonthGrid(), createViewMonthAgenda(), createViewDay()],
       locale: 'fr-FR',
@@ -89,15 +150,116 @@ function App() {
       });
   }, []);  // Le tableau vide [] signifie que useEffect s'exécute une seule fois au montage
 
-  // Créer l'application de calendrier une fois que les événements sont prêts
  
-
   return (
     <>
       <header>
         <h1>
           <img src={reactLogo} alt="React Logo" />
           Timy
+          {/* Bouton pour afficher le pop-up */}
+      <button  className="add-event-button" onClick={togglePopup}>Ajouter un événement</button>
+      {isPopupVisible && (
+        <div className="popup">
+          <div className="popup-content">
+            <h2>Créer un événement</h2>
+            <form onSubmit={handleSubmit}>
+              <label>
+                Titre :
+                <input
+                  type="text"
+                  name="title"
+                  value={eventData.title}
+                  onChange={handleInputChange}
+                  required
+                />
+              </label>
+
+
+              <label>
+                Categorie :
+                <input
+                  type="text"
+                  name="category"
+                  value={eventData.category}
+                  onChange={handleInputChange}
+                />
+              </label>
+
+
+              <label>
+                Date :
+                <input
+                  type="date"
+                  name="date"
+                  value={eventData.date}
+                  onChange={handleInputChange}
+                  required
+                />
+              </label>
+              <label>
+                Heure de début :
+                <input
+                  type="time"
+                  name="beginning"
+                  value={eventData.beginning}
+                  onChange={handleInputChange}
+                  required
+                />
+              </label>
+              <label>
+                Durée (HH:MM) :
+                <input
+                  type="text"
+                  name="duration"
+                  value={eventData.duration}
+                  onChange={handleInputChange}
+                  required
+                />
+              </label>
+              <label>
+                Lieu :
+                <input
+                  type="text"
+                  name="location"
+                  value={eventData.location}
+                  onChange={handleInputChange}
+                />
+              </label>
+              <label>
+                Créateur :
+                <input
+                  type="text"
+                  name="creator"
+                  value={eventData.creator}
+                  onChange={handleInputChange}
+                />
+              </label>
+              <label>
+                Description :
+                <textarea
+                  name="description"
+                  value={eventData.description}
+                  onChange={handleInputChange}
+                />
+              </label>
+              <label>
+                Invité :
+                <input
+                  type="email"
+                  name="guest"
+                  value={eventData.guest}
+                  onChange={handleInputChange}
+                />
+              </label>
+              <button type="submit">Ajouter</button>
+              <button type="button" onClick={togglePopup}>
+                Annuler
+              </button>
+            </form>
+          </div>
+        </div>
+      )}
         </h1>
       </header>
       <div>
@@ -105,6 +267,37 @@ function App() {
       </div>
     </>
   );
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 // Fonction pour calculer la date et l'heure de fin d'un événement
