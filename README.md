@@ -228,8 +228,14 @@ Au-delà d’un simple retour à l’impact initial avant l’augmentation de la
 
 <img width="593" alt="image" src="https://github.com/user-attachments/assets/f5938b0e-01da-4add-8705-b7f1bea30ca7">
 
-
-
 Figure 9 : Comparaison de l'impact de l'agenda optimisée avec 11 000 évenements et non-optimisée avec 30 évenements.
 
-##Perspectives
+# Améliorations
+
+Nous avons apporté plusieurs améliorations à notre prototype afin d’optimiser son fonctionnement et son expérience utilisateur. Tout d’abord, nous avons ajouté deux nouvelles vues : une vue mensuelle et une vue journalière, permettant ainsi aux utilisateurs de consulter leurs événements à différentes échelles de temps. Ensuite, nous avons résolu le problème d’affichage du calendrier miniature, garantissant un rendu plus clair et fonctionnel. Une autre amélioration importante est l’ajout d’un curseur dynamique indiquant l’heure et le jour actuels, afin de faciliter la navigation et la gestion des événements en temps réel.
+
+Sur le plan fonctionnel, nous avons appliqué une stratégie de filtrage simultané par date et par créateur, permettant d’afficher uniquement les événements pertinents tout en limitant la surcharge d’informations. Enfin, nous avons implémenté un bouton de création d’événements : un simple clic ouvre un pop-up permettant de remplir les informations nécessaires (titre, date, durée, etc.). Une fois validé, l’événement est automatiquement ajouté à la base de données et devient visible sur le calendrier.
+
+Tout au long de ces développements, nous avons également amélioré l’apparence esthétique du prototype en ajustant le design avec du CSS pour accompagner l’ajout progressif des nouvelles fonctionnalités.
+
+Cependant, malgré ces optimisations, les mesures effectuées avec Greenframe n’ont pas révélé d’impact notable sur la consommation énergétique de l’application. Cela s’explique principalement par le fait que les fonctionnalités ajoutées, bien que bénéfiques pour l’utilisateur, ne modifient pas significativement la charge globale en termes de calcul ou de transfert de données.
