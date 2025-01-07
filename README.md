@@ -11,7 +11,7 @@ Nous ne sommes pas les seuls à utiliser ce genre d'application. Par exemple, l'
 
 L'utilité sociale d'une application de type agenda numérique est principalement d'améliorer l'organisation des activités, aussi bien au niveau personnel que professionnel. Elle permet de mieux gérer le temps, d'éviter les oublis, et de structurer les journées de manière efficace, cela contribue à une meilleure qualité de vie.
 
-Ce type d'application améliore aussi la communication entre collègues ou membres de la famille en facilitant la planification de réunions, d'événements ou de projets collaboratifs. Cela réduit les risques de malentendus, comme l'horaire d'un rendez-vous, par exemple.
+Ce type d'application améliore aussi la communication entre collègues ou membres de la famille en facilitant la planification de réunions, d'événements ou de projets collaboratifs. Cela réduit les risques de confusion, notamment concernant les horaires de rendez-vous.
 
 De plus, dans des contextes de travail à distance ou d'emploi du temps chargé, ces applications jouent un rôle clé dans la fluidité des échanges et la coordination des équipes, augmentant ainsi la productivité globale tout en facilitant l'équilibre entre vie personnelle et professionnelle.
 
@@ -120,15 +120,15 @@ Nous avons obtenu d'excellents résultats, comparables à ceux de Zimbra Message
 
 |        **Scénario**        |         | **EcoIndex** | **Eau (cl)** | **GES(gCO2e)** | **Taille du DOM** | **Requêtes** | **Taille de la page (Ko)** |
 |:--------------------------:|:-------------------------------:|:------------:|:------------:|:--------------:|:-----------------:|:------------:|:--------------------------:|
-| **Chargement de la page (sans events)**  |   Mode "Développement"          |   🟢 B 78.68   |     2.11     |      1.41      |        128        |       22      |              1 669             |
-| **Chargement de la page (sans events)**  |   Mode "Pré-Production"         |   🟢 A 90.20   |     1.79     |      1.20      |        124        |      4      |            102            |
+| **Chargement de la page (sans events)**  |   Mode "Développement"          |   🟢 B 79   |     2.1     |      1.4      |        128        |       22      |              1 669             |
+| **Chargement de la page (sans events)**  |   Mode "Pré-Production"         |   🟢 A 90   |     1.8    |      1.2      |        124        |      4      |            102            |
 
 Tab 1 : Evaluation de l'impact du prototype I sans événements
 
 |        **Scénario**        |         | **EcoIndex** | **Eau (cl)** | **GES(gCO2e)** | **Taille du DOM** | **Requêtes** | **Taille de la page (Ko)** |
 |:--------------------------:|:-------------------------------:|:------------:|:------------:|:--------------:|:-----------------:|:------------:|:--------------------------:|
-| **Chargement de la page (avec events)**  |   Mode "Développement"          |   🟢 B 79.37   |     2.12     |      1.41      |        138        |       22      |              1 672             |
-| **Chargement de la page (avec events)**  |   Mode "Pré-Production"         |   🟢 A 89.90   |     1.80     |      1.20      |        134        |      4      |            103            |
+| **Chargement de la page (avec events)**  |   Mode "Développement"          |   🟢 B 79   |     2.1     |      1.4      |        138        |       22      |              1 672             |
+| **Chargement de la page (avec events)**  |   Mode "Pré-Production"         |   🟢 A 90   |     1.8     |      1.2      |        134        |      4      |            103            |
 
 Tab 2 : Evaluation de l'impact du prototype I avec événements
 
@@ -138,14 +138,14 @@ Pour cette deuxième version du prototype, les données (toujours statiques) son
 
 |        **Scénario**        |         | **EcoIndex** | **Eau (cl)** | **GES(gCO2e)** | **Taille du DOM** | **Requêtes** | **Taille de la page (Ko)** |
 |:--------------------------:|:-------------------------------:|:------------:|:------------:|:--------------:|:-----------------:|:------------:|:--------------------------:|
-| **Chargement de la page**  |   Mode "Développement"          |   🟢 B 78.66   |     2.14     |      1.43      |        143        |       25      |              1 690             |
-| **Chargement de la page**  |   Mode "Pré-Production"         |   🟢 A 86.61   |     1.81     |      1.21      |        139        |      5      |            105            |
+| **Chargement de la page**  |   Mode "Développement"          |   🟢 B 79   |     2.1     |      1.4      |        143        |       25      |              1 690             |
+| **Chargement de la page**  |   Mode "Pré-Production"         |   🟢 A 87   |     1.8     |      1.2      |        139        |      5      |            105            |
 
 Tab 3 : Evaluation de l'impact du prototype II avec événements
 
 Concernant l'évaluation de l'impact environemental de ce scénario, par rapport au tableau précédent (cf. Tab.2), les résultats sont quasiment identiques. On peut noter une légère augmentation pour chaque paramètre qui nous semble négligeable.
 
-Nous utiliserons désormais un autre logiciel, GreenFrame, qui évalue non seulement l'impact "environnemental" de la consultation, mais aussi l'impact direct de la consultation elle-même, de manière beaucoup plus fiable, en se basant sur les statistiques d'utilisation des ressources physiques : CPU, mémoire, réseau et disque. 
+Nous utiliserons désormais un autre logiciel, GreenFrame, qui évalue de manière plus fiable l'impact global de la consultation, en prenant en compte non seulement l'impact environnemental, mais aussi l'impact direct de l'utilisation des ressources physiques telles que le CPU, la mémoire, le réseau et le disque, en se basant sur les statistiques d'utilisation.
 
 <img width="640" alt="GreenFrame Browser Scénario 1" src="https://github.com/user-attachments/assets/9410d7c2-9d71-4b6f-809c-19ba72c1124f">
 
@@ -166,7 +166,7 @@ Nous avons également évalué l'impact écologique de notre partie "Serveur". N
 
 Pour la troisième version du prototype, les données sont désormais stockées dans une base de données dynamique interrogeable via une API Web (CouchDB). Ce choix permet, d'une part, de faciliter l’ajout ou la modification des articles, et, d'autre part, de confier au serveur le filtrage des données pertinentes, rendant ainsi le système plus structuré et évolutif.
 
-Dans ce deuxième prototype, les mesures révèlent une forte augmentation de la charge CPU, passant de 2.1 à 3.3, tandis que les autres paramètres évalués, tels que le trafic réseau, affiche une très légère baisse, et les ressources liées à l'affichage (screen) restent stables. Cette hausse du CPU indique une intensification des calculs ou traitements requis.
+Dans ce deuxième prototype, les mesures révèlent une forte augmentation de la charge CPU, passant de 2.1 à 3.3, tandis que les autres paramètres évalués, tels que le trafic réseau, affiche une très légère baisse, et les ressources liées à l'affichage (screen) restent stables. Cette hausse du CPU indique une intensification des calculs ou traitements requis. Cette dynamique suggère que, bien que le réseau bénéficie d’une certaine optimisation, la gestion du traitement des données reste un domaine clé pour améliorer l'efficacité du système global.
 
 
 <img width="609" alt="augmentation" src="https://github.com/user-attachments/assets/c45aa016-b391-4956-80de-52a65adcbf0d">
@@ -175,7 +175,6 @@ Dans ce deuxième prototype, les mesures révèlent une forte augmentation de la
 
 Fig 5 : Comparaison de l'impact de la consultation de la page d'un article entre les prototypes 3 (en haut) et 2 (en bas)
 
-Cette baisse de l'impact réseau est néanmoins contrebalancée par une augmentation de l'utilisation du CPU, notamment par la base de données, dont la sollicitation semble persistante. Cette dynamique suggère que, bien que le réseau bénéficie d’une certaine optimisation, la gestion du traitement des données reste un domaine clé pour améliorer l'efficacité du système global.
 
 <img width="602" alt="banckend" src="https://github.com/user-attachments/assets/4b6d399b-c81a-476b-b107-97a78d7ba10e">
 
