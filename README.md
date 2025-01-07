@@ -72,7 +72,7 @@ Nous avons choisi de comparer l'impact des scénarios sur différents agenda en 
 
 [Les résultats sont les suivants](https://github.com/UTT-GL03/Timy/blob/c439041eccb6c04562678f8e45810a7b60e8d9a0/Analyse%20GreenIT.md)
 
-L’analyse montre que Zimbra est le plus respectueux de l’environnement, avec une empreinte faible (EcoIndex A et B), une page légère, et peu de requêtes, générant ainsi moins de GES. En revanche, Google Agenda et Outlook sont beaucoup plus gourmands en ressources, avec des pages volumineuses et de nombreuses requêtes, entraînant une empreinte carbone bien plus élevée. Cependant, Zimbra présente un inconvénient : plus le nombre d’événements augmente, plus le nombre de requêtes nécessaires s’intensifie, ce qui impacte progressivement son efficacité écologique.
+L’analyse montre que Zimbra est le plus respectueux de l’environnement, avec une empreinte faible (EcoIndex A et B), une page légère, et peu de requêtes, générant ainsi moins de GES. En revanche, Google Agenda et Outlook sont beaucoup plus gourmands en ressources, avec des pages volumineuses et de nombreuses requêtes, entraînant une empreinte carbone bien plus élevée. Cependant, Zimbra présente une erreur de conception : plus le nombre d’événements augmente, plus le nombre de requêtes nécessaires s’intensifie, ce qui impacte progressivement son efficacité écologique.
 
 # Maquette de l'interface et échantillon de données
 
@@ -247,3 +247,5 @@ Pour les améliorations et fonctionnalités futures, plusieurs axes de développ
 Tout d’abord, la possibilité de partager un calendrier pourrait être introduite, en permettant aux utilisateurs de sélectionner manuellement un créateur afin d’afficher uniquement ses événements. Une autre amélioration serait d’implémenter une fonctionnalité d’import/export de calendriers au format standard (comme ICS), permettant aux utilisateurs d’intégrer ou de transférer facilement leurs événements depuis ou vers d’autres applications d’agenda. Une troisième amélioration pourrait consister à afficher les événements en fonction de leur catégorie, permettant ainsi aux utilisateurs de filtrer et de visualiser uniquement les événements pertinents selon des thématiques spécifiques, comme "travail", "loisirs" ou "études", afin de simplifier la lecture et l’organisation du calendrier.
 
 Ces évolutions permettraient d’améliorer l’utilité de l’application tout en conservant une conception minimaliste et respectueuse des enjeux environnementaux.
+
+
