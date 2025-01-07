@@ -247,4 +247,20 @@ Tout d’abord, la possibilité de partager un calendrier pourrait être introdu
 
 Ces évolutions permettraient d’améliorer l’utilité de l’application tout en conservant une conception minimaliste et respectueuse des enjeux environnementaux.
 
+# Retrospective
+
+Les premières versions de l’application (Prototypes 1 et 2) reposent sur des données statiques et un chargement dynamique, ce qui permet une évaluation initiale des impacts écologiques. Les mesures montrent une consommation énergétique majoritairement attribuée à l’écran (94% de l’impact total), tandis que le CPU, la mémoire et le réseau restent faiblement sollicités en raison de l’absence de calculs complexes ou de stockage conséquent. Ces résultats soulignent une base technique légère, bien adaptée à un usage simple.
+
+
+L’introduction d’une base de données dynamique dans le Prototype 3 vise à améliorer la structuration des données et à faciliter leur gestion via CouchDB. Cependant, cette transition entraîne une hausse significative de la charge CPU, témoignant de traitements plus intensifs côté serveur, bien que l’impact réseau connaisse une légère diminution grâce à des optimisations dans le transfert des données. 
+
+
+L’explosion du volume de données dans le Prototype 4 (jusqu’à 11 000 événements, simulant une année d’utilisation pour 10 utilisateurs) met en évidence les défis posés par le passage à l’échelle. Une augmentation drastique de l’impact réseau et une hausse de l’utilisation CPU sur le backend montrent que la gestion des données peut rapidement dégrader la performance globale et l’empreinte écologique d’une application. Pour remédier à cette situation, une stratégie de filtrage intelligent est mise en place, limitant le chargement des événements à ceux correspondant à une période spécifique et à un auteur donné. Cette approche réduit considérablement les ressources nécessaires, ramenant l’impact environnemental à un niveau comparable à celui des prototypes initiaux.
+
+
+L’utilisation d’une base de données dynamique combinée à des filtres intelligents est cruciale pour gérer efficacement de grandes quantités de données tout en minimisant l’impact environnemental. La base de données permet de structurer les informations, de faciliter leur mise à jour et de répondre rapidement aux requêtes des utilisateurs. Les filtres, quant à eux, jouent un rôle clé en limitant les données chargées et affichées aux seuls éléments pertinents. Cette approche réduit la charge sur le réseau et le CPU, rendant l’application plus performante et écoresponsable, même à grande échelle.
+
+
+En conclusion, nous avons atteint notre objectif de départ qui était de réaliser une application d’agenda numérique qui consomme moins que ce qui existe déjà sur le marché actuellement (Google agenda, Outlook, Zimbra…). De plus ce travail nous a permis aussi de montrer  l’importance de concevoir des solutions numériques optimisées dès le départ, tout en intégrant des fonctionnalités avancées de manière écoresponsable.
+
 
